@@ -576,7 +576,7 @@ export default class topologyMapHelper {
     }
 
     updateLayers(layers, directory, stateToDisplay, drawMarkerV1, typeid) {
-        console.log("inside updatelayers..");
+        console.log("inside updatelayers..", layer.options.type);
        
         if (typeid == '2') {
             if (!Array.isArray(layers)) {
@@ -606,6 +606,7 @@ export default class topologyMapHelper {
                             layer.setIcon(drawMarkerV1(value[0], layer.options.type, stateToDisplay, layer.options.isShowLabel))
                         } else if (layer.options.type == "path" || layer.options.type == "gPath") {
                             let pathID = directory[layer.options.id].selectedPathID || layer.options.id
+
                             let value = directory[pathID];
                             if (value.siblings.length > 0 && !value.selectedPathID) {
                                 var stateObj = topologyMapHelper.filteredBuldleState(directory, value, stateToDisplay.path)
@@ -1334,7 +1335,7 @@ for(var j=0; j<combination_values.length; j++){
 
         var path = topologyMapHelper.directory[UUID] || {};
         // var path = UUID || {}; // if its root id then value is render directly
-
+console.log("path inside drawpathsv1: ",path);
         if (type == "path")
             delete path.selectedPathID; //clear selectedPathID set by path bundle selection
 
@@ -1377,8 +1378,15 @@ for(var j=0; j<combination_values.length; j++){
         //     attributes: {'font-weight': 'bold',
         //                  'font-size': '24'}})
         // polyline.on("click", pathEvents.click);
+        if(isPathBundle){
+            polyline.setText('', {repeat: false, center: true, offset: -8,
+                attributes: {'font-size': '12'}})
+        }
+        else{
         polyline.setText(path.detail.DisplayName, {repeat: false, center: true, offset: -8,
             attributes: {'font-size': '12'}})
+
+        }
         polyline.on("click", pathEvents.click);
         polyline.on("mouseover", pathEvents.enter);
         polyline.on("mouseout", pathEvents.leave);
@@ -1531,9 +1539,7 @@ var layerNo=layer.layers.length;
         //  var markerStateToDisplay = stateToDisplay || {};
         console.log("drawMarkerV1: ",layerNo, "itemfromdirectory: ", itemFromDirectory);
         var statesObjFromStatusPanel = topologyMapHelper.filteredState(itemFromDirectory, stateToDisplay.marker)
-        if(!stateObjFromStatusPanel){
-            stateObjFromStatusPanel={badge:'',color:'#acacac', text:''};
-        }
+        
         for (var i = 0; i < statesObjFromStatusPanel.length; i++) {
             var stateObjFromStatusPanel = statesObjFromStatusPanel[i];
 
@@ -1549,22 +1555,40 @@ var layerNo=layer.layers.length;
         }
         //truncate markerName
         if (itemFromDirectory.name && itemFromDirectory.name.length > 10)
-            var truncatedName = itemFromDirectory.name.slice(0, 10) + "..";
+            var truncatedName = itemFromDirectory.name.slice(0, 11) + "..";
         else {
-            var truncatedName = itemFromDirectory.name.slice(0, 10) + "..";
+            var truncatedName = itemFromDirectory.name.slice(0, 11) + "..";
         }
         var markerLabel = type != "gMarker" ? "<div id='mapviewmarkerlabel'>" + (truncatedName || itemFromDirectory.name) + "</div>" : ""
 for(var i=0; i<layerNo; i++){
+    
 var elements=document.getElementsByClassName("showLabel "+i);
+console.log("elements:: i:: ",elements," i : ", i, "length: ",elements.length);
 if(elements.length>0){
     [].forEach.call(elements, function(ele){
-ele.style.display='none';
+        console.log(ele);
+//ele.style.display='none';
+if(ele && ele.getElementsByClassName(itemFromDirectory.detail.UUID) && ele.getElementsByClassName(itemFromDirectory.detail.UUID)[0]){
+    //var doc=document.getElementById("topologyMap"); console.log(doc);
+    //doc.getElementsByClassName('statusPanelWrapper')[0]
+    ele.style.display='none';
+    //ele.getElementsByClassName(itemFromDirectory.detail.UUID)[0].style.display='none';
 
+}
 })
 }
 
 }
 
+
+
+//     var collapseElements=document.getElementsByClassName("showLabel undefined");
+// if(collapseElements.length>0){
+//     [].forEach.call(collapseElements, function(ele){
+// ele.style.display='block';
+
+// })
+// }
 
 /*
 <span style="
@@ -1595,14 +1619,78 @@ itemFromDirectory.name.slice(0, 10) + ".."
         });*/
         console.log(stateObjFromStatusPanel);
         let color=stateMarkerColor ? stateMarkerColor : "#acacac";
-        return new L.DivIcon({
-            className: isShowLabel ? 'showLabel '+layerNo : ''+layerNo,
-            html: `
-            <div id="topologyModalWrapper" className="modalPopOver">
-                    <div id="topologyModal" style="border-top:4px solid `+stateObjFromStatusPanel.color+`">
-            <div class="modalHeader">
+       // let badgeColor=stateObjFromStatusPanel.badge?stateObjFromStatusPanel.color:"#acacac";
+
+       let badgeColor= (stateToDisplay.marker && Object.keys(stateToDisplay.marker)[0]!='None' && stateBadge) ? stateBadge.color : "#acacac";
+var svg='';
+var customIcon='';
+var stateinfo='';
+var stateObjFromStatusPanelText=stateObjFromStatusPanel?stateObjFromStatusPanel.text:'';
+var stateObjFromStatusPanelColor=stateObjFromStatusPanel?stateObjFromStatusPanel.color:'#acacac';
+        if(type=='crossConnectMarker'){
+               
+                if(customIcon != ''){
+                    if(stateBadge){
+                        stateinfo = `<circle cx="50" cy="55" r="40.5" fill="${color}" style="stroke:white ;stroke-width:1px;"/>
+                        <text x="45" y="15" text-anchor="middle" font-family="Arial" style="font-weight: bold; font-size:500%" fill="#f9fbfd" dy="1em">
+                            ${stateBadge.badge}
+                        </text>`;
+                    }
+                    if(request.color=="#acacac"){
+                        fillColor='none';
+                    }
+                    else{
+                        fillColor=color;
+                                        }
+    
+               svg = `<svg xmlns="http://www.w3.org/2000/svg" id="mapviewmarkersvg" width="54px" height="54px" class="equipment-ic-wrap" viewBox="0 0 380 380" preserveAspectRatio="none">
+ <g>
+  <rect class="customIconClass" style="fill:${fillColor}; stroke:${color};stroke-width:10px" id="canvas_background" height="300" width="320" y="65" x="20"/>
+  <rect class="customIconClass" fill="none" stroke-width="10" x="270.5" y="10" width="50" height="70.000001" id="svg_4" rx="12" stroke=${color} />
+ </g>
+ <g>
+  <rect id="svg_2" style="fill:none;" y="9%" x="10%" height="80%" width="80%" stroke-width="12"/>
+  <g id="svg_1">
+   <svg id="svg_3" y="10%" x="10%" height="80%" width="80%">
+    <!-- START: ICON-->
+    ${customIcon}
+    <!-- END:ICON-->
+   </svg>
+  </g>
+ 
+ </g>${stateinfo && stateinfo}</svg>`;
+        }
+ else if(!customIcon || customIcon == ''){
+    svg = `<svg version="1.1" id="mapviewmarkersvg" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    x="0px" y="0px" 
+    viewBox="0 0 34 24"
+    style="enable-background:new 0 0 30 30;" 
+    xml:space="preserve"> 
+
+    <g class="currentLayer" style="">                                
+            <g id="CrossConnectEquipmentPath" transform="translate(-712.000000, -574.000000)" stroke="#acacac" stroke-width="2" style="
+    fill: #ffffff;
+">
+                <g id="Group-2" transform="translate(258.000000, 574.000000)">
+                    <rect id="Rectangle" x="465" y="-7" width="10" height="10" rx="2"></rect>
+                </g>
+            </g>
+            
+    </g>
+</svg>`
+ }
+
+ return new L.DivIcon({
+    className: isShowLabel ? 'showLabel '+layerNo : ''+layerNo,
+    html: `
+    <div id="topologyModalWrapper" className="modalPopOver">`+svg+`
+            <div id="topologyModal" style="border-top:4px solid #acacac">
+    <div class="modalHeader">
 <div class="modalHeaderContent">
-<strong class="itemName">EQUIPMENT</strong><div class="itemsCount">`+itemFromDirectory.detail.DisplayName.slice(0, 10) +`</div><div class="statusInfo"><svg width="10" height="10" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="`+stateObjFromStatusPanel.color+`"></circle></svg><div class="name">`+stateObjFromStatusPanel.text+`</div></div></div><div class="modalClose">
+<span class=`+itemFromDirectory.detail.UUID+`></span>
+<strong class="itemName"></strong><div class="itemsCount">`+itemFromDirectory.detail.DisplayName.slice(0, 11) +`</div><div class="statusInfo"><svg width="10" height="10" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="`+stateObjFromStatusPanelColor+`"></circle></svg><div class="name">`+stateObjFromStatusPanelText+`</div></div></div><div class="modalClose">
 </div>
 </div>
 </div>
@@ -1611,9 +1699,39 @@ itemFromDirectory.name.slice(0, 10) + ".."
 iconSize: type == "gMarker"? [10,10]:[48, 48],
 stateIconColor: stateBadge ? stateBadge.color : "#acacac",
 isAlarm: Object.keys(stateToDisplay).filter((x) => (stateToDisplay[x][0] && stateToDisplay[x][0].badge)).length > 0 ? true : false
-           
-        
-    });
+   
 
+});
+
+
+        }
+        else{
+            console.log("stateObjFromStatusPanel: ",stateObjFromStatusPanel, "stateToDisplay: ",stateToDisplay);
+            
+            return new L.DivIcon({
+                className: isShowLabel ? 'showLabel '+layerNo : ''+layerNo,
+                html: `
+                <div id="topologyModalWrapper" className="modalPopOver">
+                        <div id="topologyModal" style="border-top:4px solid `+badgeColor+`">
+                <div class="modalHeader">
+    <div class="modalHeaderContent">
+    <span class=`+itemFromDirectory.detail.UUID+`></span>
+    <strong class="itemName">EQUIPMENT</strong><div class="itemsCount">`+itemFromDirectory.detail.DisplayName.slice(0, 11) +`</div><div class="statusInfo"><svg width="10" height="10" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="`+stateObjFromStatusPanelColor+`"></circle></svg><div class="name">`+stateObjFromStatusPanelText+`</div></div></div><div class="modalClose">
+    </div>
+    </div>
+    </div>
+    </div>
+    `,
+    iconSize: type == "gMarker"? [10,10]:[48, 48],
+    stateIconColor: stateBadge ? stateBadge.color : "#acacac",
+    isAlarm: Object.keys(stateToDisplay).filter((x) => (stateToDisplay[x][0] && stateToDisplay[x][0].badge)).length > 0 ? true : false
+               
+            
+        });
+
+        }
+
+
+        
 }
 }
