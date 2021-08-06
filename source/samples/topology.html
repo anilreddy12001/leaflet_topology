@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Components</title>
+</head>
+
+<body>
+    <div id="topology" style="width:100%;height:100%">
+        
+    </div>
+    
+    
+    <script type="text/javascript">        
+        window.onload = function name(params) {
+            var topology = SUREUI.components.Topology;
+
+/*
+            entityID: params.entityID,//"SureName of the selected Path"
+            entityType: params.entityType,//"Type"
+            headers: requestConfig.headers,
+            PrimaryLabel: params.PrimaryLabel,//"PrimaryLabel" of selected Path
+            imgPath: imgPath,
+            ihubAPI:ihubAPI,
+            updateDetails1: function (details) {
+                var data = getDetailsPanelData(details);
+                $scope.updateDetailsPanel(data, (details && details.SureName) || "");
+            }
+var topologyprops={entityID: params.entityID, //"SureName of the selected Path"
+            entityType: params.entityType, //"Type"
+            headers: requestConfig.headers, 
+            PrimaryLabel: params.PrimaryLabel, //"PrimaryLabel" of selected Path
+            imgPath: imgPath,
+            ihubAPI:ihubAPI};*/
+
+            var topologyprops= {"entityID":"SD-WAN-ControlPath-Vsc/10.106.255.1-Vlan/e88631ed-8d89-4e09-8afc-329a6620872e",
+            "entityType":"ControlPath",
+            "headers":{"Accept":"application/json","Content-Type":"application/json","Namespace":"false","Response-Version":3,
+            //Authorization: "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJhVnZybzFPdEJ4TjNWNHlaUnNaSE0zS3VLTVphQXM3UW8yT041ZDVZLWlzIn0.eyJqdGkiOiIzNGQ2ZmFkNi1lYjk1LTQyZWItYWFmYS1iYzBkMTNiOGJkODIiLCJleHAiOjE2MDA2OTUxMDAsIm5iZiI6MCwiaWF0IjoxNjAwNjk0ODAwLCJpc3MiOiJodHRwczovLzEzNS4yNTAuMTM5LjExNDoyODQ0My9hdXRoL3JlYWxtcy9UMCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIyMmU0YTRlMi03YTQxLTRmY2YtOGZlMy00MjU5NzM3NzRjZGUiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJTVVJFX0FQUCIsIm5vbmNlIjoiOTg0ZjU2Y2QtMDI2MS00NDE1LTgyYzctM2UwYWZmYjZlOWRjIiwiYXV0aF90aW1lIjoxNjAwNjkxMjU4LCJzZXNzaW9uX3N0YXRlIjoiMmQzMmYwYzMtZTg5Ny00NzM2LTlmZmEtZWE1OGI5ZTUyNmI5IiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovLzEzNS4yNTAuMTM5LjExNDoyODQ0MyIsIioiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX0sIlNVUkVfQVBQIjp7InJvbGVzIjpbInVzZXIiXX19LCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJ0ZW5hbnRJZCI6IlQwIiwibmFtZSI6ImFkbWluIiwiR3JvdXBfTWVtYmVyc2hpcCI6WyJBZG1pbl9Vc2VyR3JvdXAiXSwicHJlZmVycmVkX3VzZXJuYW1lIjoiYWRtaW4iLCJ1Z0lkIjoiQWRtaW5fVXNlckdyb3VwIiwiZ2l2ZW5fbmFtZSI6ImFkbWluIiwiZW1haWwiOiJlbWFpbGlkX3JlYWxtQG9yZy5jb20ifQ.Z9dovDVGfzaRueV9H4GBhNWwy3Wdc8UPVvBs1SUi-1Xt7KZvOy1nkgA7sJvL60cWnrZJZTSzEicKooy6iHwGXqqXAeVdiPDw0f6WrO3vLvy-wNInjvoRAf62Xm4b_vcO87zXUsTtHlfyTqTHw6CDRZuUkbASxBWCOubvziMrzsZsTAQZa_ud-ALCtKV5i9LRwU31sR6AbZF3id0GSKLwhuPhLj5XDVYO-eN_AfihQYyOrezRbsCpZ8qHimRLSOs__2qF4nN-uz56imUMX7gH0QcKzTnCqPNyh6BgHXtt3vo2JlUPotu7H2tDZyy3tZglG7atHvSMUY4PiJL97QnoJA",
+            "Authorization": "Basic YWRtaW46YWRtaW5AMTIz",
+
+            "tenantId":"e0e41255-0d95-03bf-a37f-b5b52d162715",
+            "ugId":"Admin_UserGroup",
+            "appId":"SURE_APP",
+            "TransformationEnabled":true,
+            "response-type":"flat"
+        },
+        "PrimaryLabel":"Path",
+        "imgPath":"https://135.250.139.189:28443/sure-ui/sureapp/SURE_UI_Components/images/",
+        "ihubAPI":"https://135.250.139.189:28443"}
+
+            var topologyComponent = React.createElement(topology, topologyprops);
+
+            ReactDOM.render(topologyComponent, document.getElementById("topology"));
+
+            function drawSVG(color, badge) {
+                var svg = '<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mapviewsettingssvg" viewBox="0 0 6 6" width="6" height="6">\
+                         <circle cx="3" cy="3" r="3" fill="'+ color + '"/><text x="3" y="3" text-anchor="middle" font-family="Arial" style="font-weight: bold; font-size:20%"  fill="#f9fbfd" dy=".3em">' + badge + '</text>\
+                        </svg>';
+                return svg
+            }
+        }
+    </script>
+</body>
+
+</html>

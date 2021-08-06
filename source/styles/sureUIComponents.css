@@ -1,0 +1,15 @@
+/**
+ *  
+ * StyleSheet : sureUIComponent.css
+ *
+ */
+
+ @font-face{font-family:Nokia Light;font-style:normal;src:url(../fonts/NokiaPureText-Light.ttf)}
+ @font-face{font-family:Nokia Regular;font-style:normal;src:url(../fonts/NokiaPureText-Regular.ttf)}
+ @font-face{font-family:Nokia Medium;font-style:bold;src:url(../fonts/NokiaPureText-Medium.ttf)}
+ @font-face{font-family:Nokia Bold;font-style:normal;src:url(../fonts/NokiaPureText-Bold.ttf)}
+
+html, body{
+    padding : 0;
+    margin : 0;
+}

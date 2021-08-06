@@ -1,0 +1,141 @@
+.cardLayout {
+    border-radius: 2px;	
+    background-color: #FFFFFF;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 4px 4px 4px 4px;
+   
+}
+.centreDiv {
+    width: 65%;
+    margin-left: auto; margin-right: auto;
+    min-width: 330px;
+}
+.divLabel{
+    height: 19px;
+    width: 60px;
+    color: rgb(18, 65, 145);
+    font-family: "Nokia Pure Text Medium";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    padding-bottom: 12px;
+}
+
+.tenatForm .csfWidgets.formLayout.container{
+   /* padding: 20px 0px 24px 0px !important;
+   margin-left: 0px !important; */
+}
+.tenatForm {
+    margin-left: 32px;
+    margin-top: 15px;
+    padding-bottom: 12px;
+     margin-right: 12px;
+}
+
+#genPassword {
+    top :10px;
+}
+#uamParent.csf-widgets-wizard{
+    top: 0px;
+    height: calc(100% - -36px);
+}
+#uamParent label
+{
+    color: rgba(0,0,0,0.55);
+    font-size: 12px!important; 
+    font-weight:500 !important;
+    font-family: "Nokia Pure Text"!important;  
+    opacity:1!important;
+    float: left;
+}
+
+#uamHeader.csf-widgets-wizard-header{
+    height: 50px;
+    display: flex;
+}
+#uamHeaderText.csf-widgets-wizard-header-title{
+    font-weight: bold;
+    padding: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    position: unset;
+}
+#uamFooter.csf-widgets-wizard-footer{
+    height: 50px;
+    position: fixed !important;
+    bottom: 0px !important;
+}
+#uamFooterActions.csf-widgets-wizard-footer-actions{
+    right: 15px;
+    top: 8px;
+}
+#uamMain.csf-widgets-wizard-main{
+    top:50px;
+    bottom: 50px;
+    background: #FAFAFA;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: unset !important;
+}
+#statusDiv.cardLayout{
+    /* padding-top: 10px ; */
+    min-height: 80px !important;
+}
+.unlockedStyle{
+    min-height: 65px !important;
+    border-top: 6px solid #FFFFFF;
+}
+.lockedStyle{
+    min-height: 65px !important;
+    border-top: 6px solid red;
+}
+#buttonGroupId{
+    padding-left: 32px;
+    padding-right: 4%;
+    padding-top: 9px;
+}
+#buttonGroupId>.csfWidgets.buttongroup.togglebutton-group{
+    float: right !important;
+}
+#buttonGroupId>.csfWidgets label{
+    display: block !important;
+    /* vertical-align: baseline !important; */
+    padding-top: 1.2em !important;
+    padding-left: 1.9em !important;
+}
+#buttonGroupId>.label{
+    display: inline-block !important;
+}
+#resetPasswordDiv>.csfWidgets.button{
+padding-left: 0px !important;
+padding-bottom: 10px !important;
+margin-bottom: 10px !important;
+padding-right: 0px !important;
+
+}
+#resetPasswordDiv>.csfWidgets.button:hover
+{
+background: unset !important;
+}
+.statusBorder{
+    border-top: 8px solid #D9070A;
+    padding-top: 2px !important;
+}
+#usernameEditId{
+    padding-left: 0.4em;
+    border-bottom: none !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.footer {
+    height: 50px;
+  }
+
+  #progressIndicatorCircularID{
+    position: absolute;
+    bottom:350px;
+    left: 50%;
+    z-index: 9;
+}

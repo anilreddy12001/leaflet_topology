@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24"><title>ic_LAG</title>
+<g>
+	<path d="M22,5H2C1.4,5,1,5.4,1,6v12c0,0.6,0.4,1,1,1h20c0.6,0,1-0.4,1-1V6C23,5.4,22.6,5,22,5z M21,17H3V7h18V17z" fill="#ffffff"></path>
+	<path d="M9.6,15H11v-5H9.5c0-0.5-0.4-1-1-1h-2c-0.5,0-1,0.4-1,1H4v5h1.4H9.6z" fill="#ffffff"></path>
+	<path d="M18.6,15H20v-5h-1.5c0-0.5-0.4-1-1-1h-2c-0.5,0-1,0.4-1,1H13v5h1.4H18.6z" fill="#ffffff"></path>
+</g>
+</svg>

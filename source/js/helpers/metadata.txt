@@ -1,0 +1,2899 @@
+{
+  "cache": "60000",
+  "perspectives": {
+    "_extended": [
+      
+    ],
+    "_default": {
+      "uri": "ihub/topology",
+      "cachable": false,
+      "response": {
+        "register": null,
+        "perspective": [
+          "native"
+        ]
+      },
+      "defaultPerspective": false
+    },
+    "usecase": {
+      "searchfilter": {
+        "uri": "",
+        "cachable": true,
+        "response": {
+          "Policy": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Domain": "domain",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Configuration": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Customer": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Valid From": "validFrom",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Valid Until": "validUntil",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "PhysicalComponent": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "FHRPTrack": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Fhrp Track Type": "fhrpTrackType",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Object Number": "objectNumber",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "VRF": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Route Table Limit": "routeTableLimit",
+              "Tenant Name": "tenantName",
+              "Max Route Number": "maxRouteNumber",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Route Distinguisher": "routeDistinguisher",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "GeographicPoint": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Crs": "crs",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "X": "x",
+              "Y": "y",
+              "Z": "z",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "SubNetwork": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Subnet Mask": "subnetMask",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Subnet Number": "subnetNumber",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Assignment": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Assignment Duration": "assignmentDuration",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Assignment Date": "assignmentDate",
+              "Assignment Price": "assignmentPrice",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Reservation": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Reservation Date": "reservationDate",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "RoutingDomain": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Area": "area",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Network": "network",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Autonomous System Id": "autonomousSystemId",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Endpoint": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Mtu": "mtu",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Inner Encap Value": "innerEncapValue",
+              "Local Name": "localName",
+              "Outer Encap Value": "outerEncapValue",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Service Id": "serviceId",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Service Name": "serviceName",
+              "Port Name": "portName",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Site Id": "siteId",
+              "Sub Type": "subType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Encap Type": "encapType",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Capacity": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Lag Operational Speed UNIT": "lagOperationalSpeedUNIT",
+              "Category": "category",
+              "Ingress Aggregate CIRUNIT": "ingressAggregateCIRUNIT",
+              "Tenant Name": "tenantName",
+              "Lag Configured Speed UNIT": "lagConfiguredSpeedUNIT",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Ingress Aggregate CIRVALUE": "ingressAggregateCIRVALUE",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Lag Operational Speed VALUE": "lagOperationalSpeedVALUE",
+              "Lag Configured Speed VALUE": "lagConfiguredSpeedVALUE",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Egress Aggregate CIRVALUE": "egressAggregateCIRVALUE",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Egress Aggregate CIRUNIT": "egressAggregateCIRUNIT"
+            }
+          },
+          "Network": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Sub Type": "subType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Pool": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Tenant Name": "tenantName",
+              "Number Total": "numberTotal",
+              "Created Date": "createdDate",
+              "Pool State": "poolState",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Number Available": "numberAvailable",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Default Quarantine Time Out In Hrs": "defaultQuarantineTimeOutInHrs",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Priority": "priority",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Default Reservation Time Out In Hrs": "defaultReservationTimeOutInHrs",
+              "Pool Type": "poolType",
+              "Type": "@type",
+              "Price": "price",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Polygon": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Subscription": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Start Date": "startDate",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "End Date": "endDate",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "AddressFamily": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Af Type": "afType",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Space": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Radius": "radius",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Crs": "crs",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "X": "x",
+              "Discovered Name": "discoveredName",
+              "Y": "y",
+              "Z": "z",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Geometry Type": "geometryType",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "PolicyRule": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Criteria": "criteria",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "StaticRoute": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Next Hop IPAddress": "nextHopIPAddress",
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Network IPAddress": "networkIPAddress",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Subnet Mask": "subnetMask",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "VirtualComponent": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "VirtualDevice": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "FCP": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Primary": "isPrimary",
+              "Enable Forwarding": "enableForwarding",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Lag Size": "lagSize",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Service Id": "serviceId",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Ip Address": "ipAddress",
+              "Service Name": "serviceName",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Site Id": "siteId",
+              "Sub Type": "subType",
+              "Circuit Type": "circuitType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Encap Type": "encapType",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Trail": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "FHRPGroup": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Hold Timer": "holdTimer",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Preempt": "preempt",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Fhrp Type": "fhrpType",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Hello Timer": "helloTimer",
+              "Password": "password",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Priority": "priority",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Mac Address": "macAddress",
+              "Backup IPAddress": "backupIPAddress",
+              "Timer Advertise": "timerAdvertise",
+              "Delay Period": "delayPeriod",
+              "Type": "@type",
+              "Authentication": "authentication",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState",
+              "Master IPAddress": "masterIPAddress"
+            }
+          },
+          "State": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Administrative State": "administrativeState",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Operational State": "operationalState",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Individual": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Form Of Address": "formOfAddress",
+              "Place Of Birth": "placeOfBirth",
+              "Gender": "gender",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Given Names": "givenNames",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Nationality": "nationality",
+              "Type": "@type",
+              "Middle Names": "middleNames",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Family Names": "familyNames",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Note": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Text": "text",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Date": "date",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Author": "author",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "ServiceProvider": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Valid From": "validFrom",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Valid Until": "validUntil",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "PhysicalDevice": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "BgpProtocol": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Bgp Type": "bgpType",
+              "Process Id": "processId",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Neighbor Peer Group": "neighborPeerGroup",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Neighbor IPAddress": "neighborIPAddress",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Neighbor Remote AS": "neighborRemoteAS",
+              "Local Address": "localAddress",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Autonomous System Id": "autonomousSystemId",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "ServiceConsumer": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Valid From": "validFrom",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Valid Until": "validUntil",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "VirtualPort": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Group": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "Organization": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Is Legal Entity": "isLegalEntity",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "GeographicSite": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Radius": "radius",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Crs": "crs",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "X": "x",
+              "Discovered Name": "discoveredName",
+              "Y": "y",
+              "Z": "z",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Status": "status",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Geometry Type": "geometryType",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Code": "code",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "VirtualLink": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "MplsNetwork": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Autonomous System": "autonomousSystem",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "LogicalComponent": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "LogicalDevice": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Protocol": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Process Id": "processId",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Property": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Radius": "radius",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Crs": "crs",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "X": "x",
+              "Discovered Name": "discoveredName",
+              "Y": "y",
+              "Z": "z",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Geometry Type": "geometryType",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Path": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Path Transport": "pathTransport",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Connection Type": "connectionType",
+              "Source Node Id": "sourceNodeId",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Service Id": "serviceId",
+              "Path Mtu": "pathMtu",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Source Node Name": "sourceNodeName",
+              "Sandbox Id": "sandboxId",
+              "Service Name": "serviceName",
+              "Dest Node Name": "destNodeName",
+              "Type": "@type",
+              "Actual Path Mtu": "actualPathMtu",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Encapsulation Type": "encapsulationType",
+              "Destination Ip Address": "destinationIpAddress",
+              "Sub Type": "subType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Path Id": "pathId",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "MplsLogicalInterface": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Encapsulation": "encapsulation",
+              "Inner Vlan Tag": "innerVlanTag",
+              "Service Policy Output": "servicePolicyOutput",
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Allowed Vlan Tag": "allowedVlanTag",
+              "Created Date": "createdDate",
+              "Logical Interface Direction": "logicalInterfaceDirection",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Duplex": "duplex",
+              "Context Id": "contextId",
+              "Mtu": "mtu",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "I PAddress": "iPAddress",
+              "Kind": "kind",
+              "Bandwidth": "bandwidth",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Speed": "speed",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Service Policy Input": "servicePolicyInput",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Outer Vlan Tag": "outerVlanTag",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Reference": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Url": "url",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          },
+          "GeographicArea": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Radius": "radius",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Crs": "crs",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "X": "x",
+              "Discovered Name": "discoveredName",
+              "Y": "y",
+              "Z": "z",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Geometry Type": "geometryType",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Connection": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Neighbor": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Ebgp Multihop": "ebgpMultihop",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Bgp Neighbor State": "bgpNeighborState",
+              "Ebgp Password": "ebgpPassword",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Mode": "mode",
+              "Remote AS": "remoteAS",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Update Source": "updateSource",
+              "Loopback IPAddress": "loopbackIPAddress",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "Service": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Start Date": "startDate",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Mode": "mode",
+              "Billable": "billable",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "End Date": "endDate",
+              "State": "state",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            }
+          },
+          "PhysicalLink": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Physical Link Type": "physicalLinkType",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Physical Link Type Other": "physicalLinkTypeOther",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Equipment": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Number Of Installed Ports": "numberOfInstalledPorts",
+              "Chassis Type": "chassisType",
+              "Operational MTU": "operationalMTU",
+              "Sys Up Time": "sysUpTime",
+              "Management Ip Address": "managementIpAddress",
+              "Created Date": "createdDate",
+              "Interface Name": "interfaceName",
+              "Serial Number": "serialNumber",
+              "Shelf Id": "shelfId",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Number Of Slots": "numberOfSlots",
+              "Displayed Name": "displayedName",
+              "Number Of Daughter Card Slots": "numberOfDaughterCardSlots",
+              "Number Of Daughter Cards": "numberOfDaughterCards",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Number Of Shelves": "numberOfShelves",
+              "Number Of Installed Fans": "numberOfInstalledFans",
+              "Referred Type": "@referredType",
+              "Lag Membership Id": "lagMembershipId",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Number Of Installed Fan Trays": "numberOfInstalledFanTrays",
+              "Sub Type": "subType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Number Of Installed Power Supplies": "numberOfInstalledPowerSupplies",
+              "Card Protection Type": "cardProtectionType",
+              "Updated Date": "updatedDate",
+              "Slot Id": "slotId",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "System Address": "systemAddress",
+              "Site Name": "siteName",
+              "Interface Type": "interfaceType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Mtu Value": "mtuValue",
+              "Base Mac Address": "baseMacAddress",
+              "Mode": "mode",
+              "Is Primary Lag Member": "isPrimaryLagMember",
+              "Type": "@type",
+              "Physical Address": "physicalAddress",
+              "Site Id": "siteId"
+            }
+          },
+          "MPLSLogicalDevice": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Device ID": "deviceID",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "LogicalInterface": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "PhysicalPort": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Serial Number": "serialNumber",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "If Type Other": "ifTypeOther",
+              "Port Number": "portNumber",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Power State": "powerState",
+              "Vendor": "vendor",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Model": "model",
+              "Id": "id",
+              "Created By": "createdBy",
+              "If Type": "ifType",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "MplsL3Vpn": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Description": "description",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Lifecycle State": "lifecycleState",
+              "Display Name": "displayName",
+              "Referred Type": "@referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Vpn Topology": "vpnTopology",
+              "Updated By": "updatedBy",
+              "Global VPNID": "globalVPNID",
+              "Sandbox Id": "sandboxId",
+              "Type": "@type",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            }
+          },
+          "Location": {
+            "kindAttributes": {
+              
+            },
+            "attributes": {
+              "Display Name": "displayName",
+              "Context": "context",
+              "Referred Type": "@referredType",
+              "Category": "category",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Mode": "mode",
+              "Updated By": "updatedBy",
+              "Sandbox Id": "sandboxId",
+              "Latitude": "latitude",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Longitude": "longitude",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Type": "@type",
+              "Live Version": "liveVersion",
+              "Identifier": "_identifier",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Sub Type": "subType",
+              "Id": "id",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Local Name": "localName",
+              "Entity Type": "_entityType"
+            }
+          }
+        },
+        "defaultPerspective": false
+      }
+    }
+  },
+  "passiveVerbs": null,
+  "grid": {
+    "_extended": {
+      "Customer": {
+        "_id": null,
+        "_type": "customerGrid",
+        "name": null,
+        "usecase": {
+          "badge": {
+            "uri": "/ihub/datagrid/customerGrid/search?count=true",
+            "cachable": false,
+            "response": [
+              {
+                
+              }
+            ],
+            "defaultPerspective": false
+          },
+          "header": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Valid From": "validFrom",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "referredType",
+              "Mode": "mode",
+              "Sandbox Id": "sandboxId",
+              "Updated By": "updatedBy",
+              "Crud Type": "crudType",
+              "Type": "type",
+              "Uuid": "uuid",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Valid Until": "validUntil",
+              "Contact Medium": "contactMedium",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            },
+            "defaultPerspective": false
+          },
+          "row": {
+            "uri": "/ihub/datagrid/customerGrid/search",
+            "cachable": false,
+            "response": "",
+            "defaultPerspective": false
+          }
+        },
+        "entity": null
+      },
+      "GeographicLocation": {
+        "_id": null,
+        "_type": "dataGrid",
+        "name": null,
+        "usecase": {
+          "badge": {
+            "uri": "/ihub/datagrid/dataGrid/search?count=true",
+            "cachable": false,
+            "response": [
+              {
+                
+              }
+            ],
+            "defaultPerspective": false
+          },
+          "header": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "Radius": "radius",
+              "Description": "description",
+              "Address": "address",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Crs": "crs",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Kind": "kind",
+              "X": "x",
+              "Discovered Name": "discoveredName",
+              "Y": "y",
+              "Z": "z",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "referredType",
+              "Geometry Type": "geometryType",
+              "Mode": "mode",
+              "Sandbox Id": "sandboxId",
+              "Updated By": "updatedBy",
+              "Crud Type": "crudType",
+              "Type": "type",
+              "Uuid": "uuid",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            },
+            "defaultPerspective": false
+          },
+          "searchfilter": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "kindAttributes": {
+                
+              },
+              "attributes": {
+                "Radius": "radius",
+                "Description": "description",
+                "Tenant Name": "tenantName",
+                "Address": "address",
+                "Crs": "crs",
+                "Created Date": "createdDate",
+                "Sub Address": "subAddress",
+                "Is Root Network Element": "isRootNetworkElement",
+                "Context Id": "contextId",
+                "Global Name": "globalName",
+                "Identifier": "_identifier",
+                "Live Version": "liveVersion",
+                "Kind": "kind",
+                "X": "x",
+                "Discovered Name": "discoveredName",
+                "Y": "y",
+                "Z": "z",
+                "Local Name": "localName",
+                "Entity Type": "_entityType",
+                "Context": "context",
+                "Display Name": "displayName",
+                "Referred Type": "referredType",
+                "Mode": "mode",
+                "Geometry Type": "geometryType",
+                "Updated By": "updatedBy",
+                "Sandbox Id": "sandboxId",
+                "Crud Type": "crudType",
+                "Type": "_type",
+                "Uuid": "uuid",
+                "Modified Tenant Name": "modifiedTenantName",
+                "Created By": "createdBy",
+                "Updated Date": "updatedDate"
+              }
+            },
+            "defaultPerspective": false
+          },
+          "row": {
+            "uri": "/ihub/datagrid/dataGrid/search",
+            "cachable": false,
+            "response": "",
+            "defaultPerspective": false
+          }
+        },
+        "entity": null
+      },
+      "Resource": {
+        "_id": null,
+        "_type": "dataGrid",
+        "name": null,
+        "usecase": {
+          "badge": {
+            "uri": "/ihub/datagrid/dataGrid/search?count=true",
+            "cachable": false,
+            "response": [
+              {
+                
+              }
+            ],
+            "defaultPerspective": false
+          },
+          "header": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "Category": "category",
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Version": "version",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Operational State": "operationalState",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Lifecycle State": "lifecycleState",
+              "Referred Type": "referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Administrative State": "administrativeState",
+              "Mode": "mode",
+              "Sandbox Id": "sandboxId",
+              "Updated By": "updatedBy",
+              "Crud Type": "crudType",
+              "Type": "type",
+              "Uuid": "uuid",
+              "Modified Tenant Name": "modifiedTenantName",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate",
+              "Usage State": "usageState"
+            },
+            "defaultPerspective": false
+          },
+          "searchfilter": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "kindAttributes": {
+                
+              },
+              "attributes": {
+                "Description": "description",
+                "Category": "category",
+                "Tenant Name": "tenantName",
+                "Created Date": "createdDate",
+                "Is Root Network Element": "isRootNetworkElement",
+                "Context Id": "contextId",
+                "Serial Number": "serialNumber",
+                "Global Name": "globalName",
+                "Identifier": "_identifier",
+                "Live Version": "liveVersion",
+                "Version": "version",
+                "Kind": "kind",
+                "Discovered Name": "discoveredName",
+                "Operational State": "operationalState",
+                "Local Name": "localName",
+                "Entity Type": "_entityType",
+                "Alarm Set Time": "alarmSetTime",
+                "Context": "context",
+                "Lifecycle State": "lifecycleState",
+                "Display Name": "displayName",
+                "Referred Type": "referredType",
+                "Alarm Severity": "alarmSeverity",
+                "Administrative State": "administrativeState",
+                "Mode": "mode",
+                "Updated By": "updatedBy",
+                "Sandbox Id": "sandboxId",
+                "Power State": "powerState",
+                "Crud Type": "crudType",
+                "Vendor": "vendor",
+                "Type": "_type",
+                "Uuid": "uuid",
+                "Modified Tenant Name": "modifiedTenantName",
+                "Model": "model",
+                "Created By": "createdBy",
+                "Autonomous System": "autonomousSystem",
+                "Updated Date": "updatedDate",
+                "Usage State": "usageState"
+              }
+            },
+            "defaultPerspective": false
+          },
+          "row": {
+            "uri": "/ihub/datagrid/dataGrid/search",
+            "cachable": false,
+            "response": "",
+            "defaultPerspective": false
+          }
+        },
+        "entity": null
+      },
+      "Service": {
+        "_id": null,
+        "_type": "dataGrid",
+        "name": null,
+        "usecase": {
+          "badge": {
+            "uri": "/ihub/datagrid/dataGrid/search?count=true",
+            "cachable": false,
+            "response": [
+              {
+                
+              }
+            ],
+            "defaultPerspective": false
+          },
+          "header": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "Description": "description",
+              "Tenant Name": "tenantName",
+              "Created Date": "createdDate",
+              "Is Root Network Element": "isRootNetworkElement",
+              "Context Id": "contextId",
+              "Global Name": "globalName",
+              "Identifier": "_identifier",
+              "Live Version": "liveVersion",
+              "Start Date": "startDate",
+              "Kind": "kind",
+              "Discovered Name": "discoveredName",
+              "Local Name": "localName",
+              "Entity Type": "_entityType",
+              "Alarm Set Time": "alarmSetTime",
+              "Context": "context",
+              "Display Name": "displayName",
+              "Referred Type": "referredType",
+              "Alarm Severity": "alarmSeverity",
+              "Billable": "billable",
+              "Mode": "mode",
+              "Sandbox Id": "sandboxId",
+              "Updated By": "updatedBy",
+              "Crud Type": "crudType",
+              "Type": "type",
+              "Uuid": "uuid",
+              "End Date": "endDate",
+              "Modified Tenant Name": "modifiedTenantName",
+              "State": "state",
+              "Created By": "createdBy",
+              "Updated Date": "updatedDate"
+            },
+            "defaultPerspective": false
+          },
+          "searchfilter": {
+            "uri": "",
+            "cachable": true,
+            "response": {
+              "kindAttributes": {
+                
+              },
+              "attributes": {
+                "Description": "description",
+                "Tenant Name": "tenantName",
+                "Created Date": "createdDate",
+                "Is Root Network Element": "isRootNetworkElement",
+                "Context Id": "contextId",
+                "Global Name": "globalName",
+                "Identifier": "_identifier",
+                "Start Date": "startDate",
+                "Live Version": "liveVersion",
+                "Kind": "kind",
+                "Discovered Name": "discoveredName",
+                "Local Name": "localName",
+                "Entity Type": "_entityType",
+                "Alarm Set Time": "alarmSetTime",
+                "Context": "context",
+                "Display Name": "displayName",
+                "Referred Type": "referredType",
+                "Alarm Severity": "alarmSeverity",
+                "Mode": "mode",
+                "Billable": "billable",
+                "Updated By": "updatedBy",
+                "Sandbox Id": "sandboxId",
+                "Crud Type": "crudType",
+                "Type": "_type",
+                "Uuid": "uuid",
+                "End Date": "endDate",
+                "State": "state",
+                "Modified Tenant Name": "modifiedTenantName",
+                "Created By": "createdBy",
+                "Updated Date": "updatedDate"
+              }
+            },
+            "defaultPerspective": false
+          },
+          "row": {
+            "uri": "/ihub/datagrid/dataGrid/search",
+            "cachable": false,
+            "response": "",
+            "defaultPerspective": false
+          }
+        },
+        "entity": null
+      }
+    },
+    "_default": null
+  },
+  "alarm": {
+    "AlarmMetadata": {
+      "value": "none",
+      "label": "Badge Status Indication",
+      "markers": [
+        {
+          "label": "None",
+          "value": "none",
+          "values": [
+            
+          ]
+        },
+        {
+          "label": "Alarm",
+          "value": "alarmSeverity",
+          "values": [
+            {
+              "text": "CLEARED",
+              "background-color": "#05A18F",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "CL"
+            },
+            {
+              "text": "INDETERMINATE",
+              "background-color": "#B5B5B5",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "IN"
+            },
+            {
+              "text": "WARNING",
+              "background-color": "#239DF9",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "WA"
+            },
+            {
+              "text": "MINOR",
+              "background-color": "#FFBF02",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "MI"
+            },
+            {
+              "text": "MAJOR",
+              "background-color": "#FF7900",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "MA"
+            },
+            {
+              "text": "CRITICAL",
+              "background-color": "#D9070A",
+              "text-color": "black",
+              "icon": "nokia.png",
+              "enabled": false,
+              "badge": "CR"
+            }
+          ]
+        }
+      ]
+    },
+    "EntityStateMetadata": {
+      "value": "Operational States",
+      "label": "Marker Status Indication",
+      "markers": [
+        {
+          "label": "None",
+          "value": "none",
+          "values": [
+            
+          ]
+        },
+        {
+          "label": "Service Operational State",
+          "value": "state",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "designed",
+              "background-color": "#FFDF81",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "active",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "inactive",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "terminated",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "label": "Resource Lifecycle State",
+          "value": "lifecycleState",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Planning",
+              "background-color": "#D9B5ED",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Installing",
+              "background-color": "#FFDF81",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Operating",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Retiring",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "label": "Operational State",
+          "value": "operationalState",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Working",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "NotWorking",
+              "background-color": "#E4AFB1",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "label": "Administrative State",
+          "value": "administrativeState",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Activated",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Deactivated",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "NotApplicable",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "label": "Resource Usage State",
+          "value": "usageState",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Available",
+              "background-color": "#D9B5ED",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Reserved",
+              "background-color": "#D9B5ED",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "Assigned",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "NotAvailable",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        },
+        {
+          "label": "Power State",
+          "value": "powerState",
+          "values": [
+            {
+              "text": "Unknown",
+              "background-color": "#9CBFD8",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "PowerDown",
+              "background-color": "#BDBDBD",
+              "text-color": "black",
+              "enabled": false
+            },
+            {
+              "text": "PowerUp",
+              "background-color": "#83D0C7",
+              "text-color": "black",
+              "enabled": false
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "errorMapper": "60000",
+  "customActions": [
+    
+  ],
+  "sideMenu": [
+    {
+      "groupTitle": "BROWSE",
+      "group": [
+        {
+          "name": "Service",
+          "_ref": "serviceGrid",
+          "multihopOnly": "true",
+          "multihop": [
+            {
+              "joins": [
+                {
+                  "as": "ser2",
+                  "type": "com.nokia.nsw.uiv.model.service.Service",
+                  "properties": {
+                    "globalName": "*"
+                  }
+                }
+              ],
+              "name": "GeographicLocation",
+              "_ref": "dataGrid",
+              "action": "dataGridService",
+              "title": "GeographicLocation",
+              "entity": "com.nokia.nsw.uiv.model.location.GeographicLocation"
+            }
+          ],
+          "action": "dataGridService",
+          "entity": "com.nokia.nsw.uiv.model.service.Service"
+        },
+        {
+          "name": "Customer",
+          "_ref": "customerGrid",
+          "multihopOnly": "true",
+          "multihop": [
+            {
+              "joins": [
+                {
+                  "as": "ser2",
+                  "type": "com.nokia.nsw.uiv.model.common.party.Customer",
+                  "properties": {
+                    "globalName": "*"
+                  }
+                }
+              ],
+              "name": "Service",
+              "_ref": "dataGrid",
+              "action": "dataGridService",
+              "title": "Active Services",
+              "entity": "com.nokia.nsw.uiv.model.service.Service"
+            }
+          ],
+          "action": "dataGridService",
+          "entity": "com.nokia.nsw.uiv.model.common.party.Customer"
+        },
+        {
+          "name": "Resource",
+          "_ref": "dataGrid",
+          "action": "dataGridService",
+          "entity": "com.nokia.nsw.uiv.model.resource.Resource"
+        }
+      ]
+    },
+    {
+      "groupTitle": "DISCOVERY",
+      "group": [
+        {
+          "_ref": "dataGrid",
+          "name": "Batch Operations",
+          "action": "ScheduledOperations",
+          "entity": "ScheduledOperations"
+        },
+        {
+          "_ref": "dataGrid",
+          "name": "Operation Type",
+          "action": "OperationType",
+          "entity": "OperationType"
+        },
+        {
+          "name": "Manual Recons",
+          "_ref": "dataGrid",
+          "action": "ManualRecons",
+          "entity": "ManualRecons"
+        },
+        {
+          "name": "Adapters",
+          "_ref": "dataGrid",
+          "action": "Adapters",
+          "entity": "Adapters"
+        },
+        {
+          "name": "Business Rules",
+          "_ref": "dataGrid",
+          "action": "BusinessRules",
+          "entity": "BusinessRules"
+        },
+        {
+          "name": "Active Discrepancy",
+          "_ref": "dataGrid",
+          "action": "ActiveDiscrepancy",
+          "entity": "ActiveDiscrepancy"
+        },
+        {
+          "name": "BlackOut Period",
+          "_ref": "dataGrid",
+          "action": "BlackOutPeriod",
+          "entity": "BlackOutPeriod"
+        }
+      ]
+    },
+    {
+      "groupTitle": "REPORTS",
+      "group": [
+        {
+          "_ref": "openReports",
+          "name": "Reports",
+          "action": "OpenReports",
+          "entity": "ReportsApp"
+        }
+      ]
+    }
+  ]
+}

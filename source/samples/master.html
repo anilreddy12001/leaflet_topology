@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Component</title>
+    <style>
+        body,
+        html {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+
+        #view {
+            float: left;
+            width: 80%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+
+        #panelContainer {
+            height: 0px;
+            border-left: 1px solid #dedede;
+            width: 20%;
+            float: left;
+            display: none;
+        }
+
+        #panelContainer table {
+            width: 100%
+        }
+
+        #panelContainer th {
+            background: #205081;
+            color: white;
+            padding: 5%;
+            text-align: center;
+        }
+        #panelContainer td:hover{
+            background-color: #f6f4f4
+        }
+
+        #panelContainer td {
+            padding: 3% 5% 3% 5%;
+            cursor: pointer;
+        }
+
+        #appBanner .button-content{           
+            font-size: 124% !important;
+        }
+
+        #appBanner .button-content div{
+            display:  none; 
+        }
+
+        #appBanner .user-menu-btn.button{
+            margin-right:77px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="appBanner"></div>
+    <div id="view">
+        <iframe id="frame"></iframe>
+    </div>
+    <div id="panelContainer">
+        <table>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        window.onload = function name(params) {
+            var frame = document.getElementById("frame");
+            var appBanner = document.getElementById("appBanner");
+            var componentItems = document.getElementById("panelContainer");
+            var tbody = document.querySelector("#panelContainer tbody");
+
+            frame.style.height = window.innerHeight - 48+ "px";
+            frame.src = "./equipmentMap.html";
+
+            componentItems.style.height = window.innerHeight - 48+ "px";
+            componentItems.style.display = "inherit";
+
+            tbody.innerHTML = getPanelElements(SUREUI.components)
+
+            
+            
+            var AppBanner = SUREUI.external.csfWidgets.AppBanner;
+
+            var renderComponent = csfWidgets.csfWidgetsSDK.renderComponent;
+
+            renderComponent(AppBanner,'appBanner',{
+                id: 'rencompappBanner',
+                banner1: 'SURE',
+                banner2: 'GUI-Components',
+                logoImagePath: "<%= htmlWebpackPlugin.options.publicPath + require('@nokia-csf-uxr/csfWidgets/images/Nokia_logo_white.svg') %>",
+                logoText: 'Nokia Logo',
+                userProp1: 'Components',
+                onLogoutBtnClick: function() {alert('update onLogoutBtnClick to drive next step')},
+                onMouseOver: function () {document.getElementById('userSummary').style.visibility = 'visible'}
+            });    
+        }
+
+        function renderComponent(element) {
+            console.log(element);
+            document.getElementById("frame").src = "./" + element + ".html";
+        }
+
+        function getPanelElements(obj) {
+            var result = "<tr></tr>";
+            Object.keys(obj).forEach(function (element) {
+                result += "<tr><td onClick='renderComponent(\"" + element.substr(0,1).toLowerCase() + element.substr(1, element.length) + "\")'><span>" + element + "</span></td></tr>"
+            }, this);
+            return result;
+        }
+
+        function unmountData() {
+            
+            
+            var DataGridList = SUREUI.components.DataGridList;
+            ReactDom.unmountComponentAtNode(document.getElementById("dataGrid"));
+        }
+    </script>
+
+</body>
+
+</html>

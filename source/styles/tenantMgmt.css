@@ -1,0 +1,113 @@
+
+#tenantMgmtAdd
+{
+    font-family: "Nokia Pure Text Bold", Arial, sans-serif;
+    
+    height: calc(100% - 50px);
+    padding-top: 74px;
+    overflow-y: scroll;
+    
+    
+}
+#tenantMgmtAdd #cardHeader
+{
+    font-size: 14px;
+    color: rgba(18,65,145,0.87);
+    width:900px;
+    margin:0 auto;
+    font-weight:500;
+    font-family: "Nokia Pure Text";
+}
+#card5
+{
+   overflow-y:scroll !important;
+}
+
+.shareProfile .checkbox-container
+{
+    height:20px!important;
+}
+#tenantMgmtAdd label
+{
+    color: rgba(0,0,0,0.55);
+    font-size: 12px!important; 
+    font-weight:500 !important;
+    font-family: "Nokia Pure Text"!important;  
+    opacity:1!important;
+    float:left;
+}
+.shareProfile #shareDesc
+{
+    padding-left:25px;
+    color: rgba(0,0,0,0.54);	
+    font-family: "Nokia Pure Text";	
+    font-size: 12px;	
+    line-height: 16px;
+}
+#tenantMgmtAdd #tenantEmail
+{
+    cursor:pointer;
+    color:blue;
+}
+
+#tenantMgmtAdd #tenantPortalUrl1
+{
+    margin-top:2%;
+}
+
+#tenantMgmtAdd #pwInfo
+{
+    border:solid 1px blue;
+    width: 82%;
+    height: 35px;
+    text-align: start;
+    background: aliceblue;
+    clear:both;
+}
+#tenantMgmtAdd #Resetpw
+{
+    
+    clear:both;
+}
+
+#tenantMgmtAdd #pwInfoSpan
+{
+   padding: 5px 0px;
+    display: inline-block;
+}
+
+#tenantMgmtAdd .manImg
+{
+   content: url('../images/ic_info.svg');
+    padding-right: 8px;
+}
+
+.darker-toast
+{
+    background-color: #414142 !important;
+}
+
+#tenantMgmtAdd .csfWidgets .checkbox-container .label-container, .csfWidgets .radio-container .label-container {
+    display:inline-flex;
+}
+.tenantMgmt
+{
+    height:90vh;
+    position:relative;
+}
+_:-ms-fullscreen, :root .csfWidgets .textinput input{
+    height:30px;
+}
+.tenantHeader
+{   width:100%;
+    position:absolute;
+    top:0;
+    z-index:9;
+}
+
+#progressIndicatorCircularID{
+    position: absolute;
+    bottom:350px;
+    left: 50%;
+    z-index: 9;
+}

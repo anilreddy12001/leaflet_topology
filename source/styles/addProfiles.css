@@ -1,0 +1,71 @@
+#addProfiles #card{
+    border-radius : 2px;
+    width:600px;
+    background-color: #FFFFFF;  
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+}
+
+
+#addProfiles #card #fileUploaderContainer{
+    padding: 20px;
+    border-bottom: 1px solid #cac7c7;
+}
+
+
+#addProfiles #card #fileUploaderContainer #fileUploaderLabel{
+    font-family: "Nokia Pure Text Bold", Arial, sans-serif;
+
+}
+
+#addProfiles #card #fileUploaderContainer #fileUploaderHelperText{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(117, 117, 117);
+}
+
+#progressIndicatorCircularID{
+    position: absolute;
+    bottom:350px;
+    left: 50%;
+    z-index: 9;
+}
+
+#addProfiles #card #fileUploaderContainer .listItemWrapper{
+    height: 40px;
+    width:initial;
+/*    border: 1px solid #e0e0e0;*/
+}
+
+#addProfiles #card #fileUploaderContainer #fileUploaderInnerContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#addProfiles #card #fileUploaderContainer #fileUploaderWrapper{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    position:relative;
+    border: 1px dashed #d4d2d2;
+}
+
+#addProfiles #card #fileUploaderContainer #fileUploaderHelperText1{
+   /* padding-bottom: 5px;*/
+    bottom: 0px;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    color: rgb(117, 117, 117);
+}
+
+.darker-toast{
+    background-color: #323232 !important
+}

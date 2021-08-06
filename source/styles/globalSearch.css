@@ -1,0 +1,50 @@
+.searchLayout
+{
+      margin:3% 4%;
+      
+}
+.gSearchRdiv
+{
+      width:50%;
+      float:left;
+}
+.divAlign{
+      padding-top:20px;
+}
+.promptTextClass
+{
+      clear:both;
+      padding-top:20px;
+      margin-left:4%;
+      
+}
+.dataGridDiv
+{
+      margin:5% 4% 0 4%;
+      
+      clear:both;
+}
+.dataGridDiv .gridHeading
+{
+      padding:0px 0px 10px 0px;
+}
+.promptTextClass input{
+      max-width: 1107px !important;
+      width: 1107px !important;
+      float:left;
+}
+.promptTextClass .searchBtnClass{
+      float:left;
+      padding-left:20px;
+}
+.backArrow
+{
+      position: absolute;
+      top: 20px;
+      z-index: 1;
+      margin-left:20px;
+}
+.toolbar-main
+{
+      padding-left:30px;
+}

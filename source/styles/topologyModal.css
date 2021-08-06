@@ -1,0 +1,220 @@
+#topologyModalWrapper{
+    position: relative;
+}
+
+
+#topologyModal{
+    font-family:"Nokia Regular", Arial, sans-serif;
+    position: absolute;
+    z-index: 800;
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    /* min-width: 200px;
+    min-height: 90px; */
+    max-width: 300px;
+    border-top: 4px solid #acacac;
+    box-shadow: -1px 0px 2px 0px rgba(0,0,0,0.12), 3px 4px 7px 1px rgba(0,0,0,0.24);
+
+}
+
+/* #topologyModal.modalPopOver{
+    min-width: 165px;
+    min-height: 90px;
+} */
+
+#topologyModal .modalHeader{
+    display: flex;
+    padding:10px 10px 5px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#topologyModal .modalHeader .modalHeaderContent{
+    padding: 0;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+#topologyModal .modalHeader #modalCloseSVG{
+    cursor: pointer;
+    width:20px;
+}
+
+#topologyModal  .modalHeader .itemName{
+    font-family: "NokiaPureText-Medium", Arial, sans-serif;
+}
+
+#topologyModal  .modalHeader .itemsCount{
+    color: #868585;
+    padding-top: 2px;
+    font-family: "NokiaPureText-Medium", Arial, sans-serif;
+}
+
+#topologyModal  .modalClose{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#topologyModal .modalRootElements{  
+    height: 60px;
+    background-color: rgba(208, 204, 204, 0.5);
+}
+
+#topologyModal .modalChildElementsContainer{
+    display: flex;
+    min-width: 280px;
+    flex-flow: column nowrap;
+}
+
+#topologyModal .individualEntityContainer{
+    min-width: 200px;
+}
+
+#topologyModal .modalChildElementsContainer .modalEntityElementsHeader{
+    display:flex;
+    font-size: 90%;
+    padding: 5px 10px;
+    color: #868585;    
+    border-bottom:1px solid rgba(208, 204, 204, 0.5);
+    justify-content: space-between;
+    font-family: "NokiaPureText-Medium", Arial, sans-serif;
+}
+
+#topologyModal .modalEntityElementsContainer .modalEntityElements{
+    display:flex;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+#topologyModal .modalRootElements .modalEntityElement{
+    border:none;
+}
+
+#topologyModal .modalEntityElement{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid rgba(208, 204, 204, 0.5);
+}
+
+#topologyModal .modalChildElementsContainer .modalEntityElement:hover
+{
+    cursor: pointer;
+    background-color : #eaeaea
+}
+
+#topologyModal .modalChildElementsContainer .modalEntityElement.selectedPath
+{
+    background-color : #eaeaea
+}
+
+#topologyModal .modalEntityElement > div:nth-child(odd){
+    width:40%;
+} 
+
+
+
+#topologyModal .individualEntity > div:nth-child(odd){
+    width:100%;
+} 
+
+#topologyModal .modalEntityElement .modalEntityElementPath{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topologyModal .modalEntityElement .modalEntityElementPath hr{
+    margin: 0;
+    border: 2px solid #acacac;
+    width: 30px;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+#topologyModal .modalEntityElement .modalEntityElementSource
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+#topologyModal .modalEntityElement .modalEntityElementDestination
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#topologyModal .modalEntityElement .elementName
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "NokiaPureText-Medium", Arial, sans-serif;
+    font-size: 85%;
+    padding: 0px 5px 0px 5px;
+}
+
+#topologyModal .modalEntityElementWrapper{
+    max-height: 137px;
+    position: relative;
+}
+
+#topologyModal .modalRootElements .modalEntityElement .modalEntityElementSource,
+#topologyModal .modalRootElements .modalEntityElement .modalEntityElementDestination
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* #topologyModal .modalRootElements .modalEntityElement .modalEntityElementPath hr{
+    border-style: dashed;
+    display:none;
+    width:25px;
+} */
+
+
+#topologyModal .modalRootElements .modalEntityElement .elementName
+{
+    text-align: center;
+    width:100%;
+}
+
+#topologyModal .toolTipContainer
+{
+    min-width: 140px;
+    padding:10px;
+    max-width: 180px;
+}
+
+#topologyModal .toolTipContainer .entityType
+{
+    font-family: "NokiaPureText-Medium", Arial, sans-serif;
+    color:#676767;
+}
+
+#topologyModal .toolTipContainer .entityName,
+#topologyModal .statusInfo
+{
+    font-family: "Nokia Regular", Arial, sans-serif;
+    margin-top: 10px;
+    word-wrap: break-word;
+    font-size: 95%;
+}
+
+#topologyModal .statusInfo{
+    display: flex;
+    align-items: center  
+}
+
+#topologyModal .statusInfo .name{
+    padding: 5px;
+}

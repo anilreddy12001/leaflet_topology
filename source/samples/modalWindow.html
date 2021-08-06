@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Component</title>
+
+    <body>
+        <input type="button" value="openPoup" onclick="openPopup()" text="openPopup"></input>
+        <div id="modalWindow"></div>
+        <script type="text/javascript">   
+            function openPopup(params) {
+                console.log('inside click..');
+                
+                
+                var modalWindow = SUREUI.components.ModalWindow;
+
+                var prop = {
+                    id:"modalWindowContainer",
+                    header: true,
+                    height: 600,
+                    width: 1000,
+                    title: "AOR",
+                    headerColor:"#acacac",
+                    userName: "Test",
+                    iconBaseURL: "",
+                    iframeSource: "http://localhost/SURE-CustomHookSDK/CustomScripts/dist/",
+                    iframeDataSource: {
+                        url: "http://135.250.139.155:8081/oss/sure/equipments?criteria=onlyRoot&limit=100&page=1&expand=Capacity,State",
+                        headers: {
+                            Authorization: 'Basic YWRtaW46YWRtaW5AMTIz',
+                            tenantId: 'GlobalTenant',
+                            ugId: 'Admin_UserGroup',
+                            appId: 'SURE_APP',
+                            Accept: 'application/json',
+                            TransformationEnabled: true,
+                            'Content-Type': 'application/json',
+                            'Response-Type': 'flat'
+                        }
+                    },
+                    onClose: function () {
+                        ReactDom.unmountComponentAtNode(document.getElementById("modalWindow"));
+                    }
+
+                }
+
+                var modalWindowComponent = React.createElement(modalWindow, prop);
+                ReactDOM.render(modalWindowComponent, document.getElementById("modalWindow"));
+
+            }
+        </script>
+
+</html>

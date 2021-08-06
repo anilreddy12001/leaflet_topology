@@ -1,0 +1,52 @@
+#Footer.footerCancelSave{
+    height: 50px;
+    width:700px;
+    position: fixed !important;
+    bottom: 0px !important;
+}
+#FooterActions.footerActionsCancelSave{
+    right: 15px;
+    top: 8px;
+}
+ .deleteIcon {
+     float:left;
+     margin-right: 400px;
+    
+} 
+
+.cancelSave{
+    float:right;
+    padding-right:20px;
+
+}
+
+.queryNameClass{
+    padding: 8px;
+    font-family: "Nokia Pure Text Regular";
+    font-size: 14px;
+    line-height: 14px;
+    border:1px solid rgba(0,0,0,0.12);
+    border-radius: 2px;
+    
+}
+
+.querydescriptionClass{
+    font-family: "Nokia Pure Text Regular";
+    font-size: 14px,87% #000000;
+    line-height: 20px;
+}
+
+
+
+.toastSearchPopup{
+  
+    background-color: #323232 !important
+}
+
+.toast-container{
+    z-index:1;
+}
+
+.queryTypeClass{
+    margin-top: 20px;
+}

@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Components</title>
+</head>
+
+<body>
+    <div id="topologyMap" style="width:100%;height:100%">
+        
+    </div>
+    
+    
+    <script type="text/javascript">        
+        window.onload = function name(params) {
+            
+            
+            var topologyMap = SUREUI.components.TopologyMap;
+
+             //"UUID": "4f102405-02f3-4ad4-a995-608655e900e3" 
+             //Service
+
+           // var inputMultiEquipments = [{type: 'Equipment', UUID: 'e4d8c7b5-43c7-418c-b201-0ddc5190c744'},{type: 'Equipment', UUID: '8fa057a8-a4b3-467b-ad4e-d5d717c37b95'}, {type: 'Equipment', UUID: 'a0bbc89e-05c0-448e-8471-3cffc48a8656'}];//taken on 22may
+            
+  //          var inputMultiEquipments =[{type: 'Endpoint', UUID: '672e7f00-1a35-11e9-89db-0242c0a80103'},{type: 'Endpoint', UUID: '5937742c-781c-43f1-bd54-8706c284b63b'}, {type: 'Endpoint', UUID: '68ac646a-b530-4650-b759-008b40c0782f'}]; //Working original data*/
+
+            var inputMultiEquipments =[{type: 'Endpoint', UUID: '89b91361-d4d5-490e-99c4-81d2ca15141f'},
+{type: 'Endpoint', UUID: '36bcd2da-0d90-4609-ab67-be1e95e07640'},{type: 'Equipment', UUID: 'daa65b49-2061-4a45-b258-cb4edeaf9428'}];
+  /*var inputMultiEquipments =[{type: 'Equipment', UUID: '5990255f-25e8-11e9-8ca0-0242c0a80103'}, //Chicago on 91 server..
+                             {type: 'Equipment', UUID: '6c357dd6-1a33-11e9-89db-0242c0a80103'}, //chicago
+                             {type: 'Equipment', UUID: '2fa5757b-1a4c-11e9-89db-0242c0a80103'}, //chicago
+                             {type: 'Equipment', UUID: '7deb6c9c-1aee-11e9-89db-0242c0a80103'}, //chicago
+                             {type: 'Equipment', UUID:'986079a7-3f25-11e9-8752-0242c0a80103'}, //memphis. 
+                             {type: 'Equipment', UUID:'8edf3d88-1a33-11e9-89db-0242c0a80103'}, //memphis.
+                             {type: 'Equipment', UUID:'79194b1a-1aee-11e9-89db-0242c0a80103'},   //new york
+            {type: 'Equipment', UUID:'251b6659-1a4c-11e9-89db-0242c0a80103'}];   //new york*/
+            
+/*var inputMultiEquipments = [{type: 'Equipment', UUID: '7ef6bb42-d0c3-4561-a3cb-ff004b37c2bc'},//bangladesh 137
+                        {type: 'Equipment', UUID: 'daa65b49-2061-4a45-b258-cb4edeaf9428'}, //bangladesh, 137
+                            {type: 'Equipment', UUID: 'e4d8c7b5-43c7-418c-b201-0ddc5190c744'}, //CGMIR37, 137
+                           {type: 'Equipment', UUID: '8fa057a8-a4b3-467b-ad4e-d5d717c37b95'},// CGMIR37, 137
+            {type: 'Endpoint', UUID: '7b43baad-b4d7-4a98-a350-79e7a053c7d9'}, //CGMIR37 endpoint
+                          {type: 'FCP', UUID: 'ed117772-3df3-486d-a6ea-59432c49d0b6'}, //bangladesh fcp
+                             {type: 'FCP', UUID: '42bf814f-e6f5-418e-b8eb-4a043160742d'},//bangladesh
+                            {type: 'Endpoint', UUID: 'd8306b07-c144-43da-95b2-ca525e9dda90'},//bangladesh endpoint
+                            {type: 'Endpoint', UUID: 'fe0fbf9f-439a-47e0-9d7f-fb015586063f'}//bangladesh endpoint*/
+  //                         ];//*/
+            
+
+           /* var inputMultiEquipments =[{type: 'Equipment', UUID: 'daa65b49-2061-4a45-b258-cb4edeaf9428'},{type: 'Equipment', UUID: '110f32f2-b0f4-4b03-94fd-80ea3d065219'}];*/
+
+/*            var inputMultiEquipments =[{type: 'Endpoint', UUID: '68ac646a-b530-4650-b759-008b40c0782f'},
+{type: 'Endpoint', UUID: '672e7f00-1a35-11e9-89db-0242c0a80103'},
+{type: 'Endpoint', UUID: '5937742c-781c-43f1-bd54-8706c284b63b'}
+];*/
+            
+//            var inputMultiEquipments =[{type: 'Endpoint', UUID: '7b442c15-fdea-484a-869d-5481c56dea4e'},{type: 'Endpoint', UUID: '36bcd2da-0d90-4609-ab67-be1e95e07640'},{type: 'Endpoint', UUID: '7b442c15-fdea-484a-869d-5481c56dea4e'}];
+            
+            /*var inputMultiEquipments =[{type: 'Endpoint', UUID: '7b442c15-fdea-484a-869d-5481c56dea4e'},
+{type: 'Endpoint', UUID: '36bcd2da-0d90-4609-ab67-be1e95e07640'}];*/
+            
+            var customHookData =[{
+            Category: "ATTRIBUTE",
+            CreatedBy: "GUI_User",
+            CreationDate: "2019-05-20T07:25:02.907Z",
+            DisplayAs: "Popup",
+            DisplayName: "CH_COMPONENT_WINDOW:Endpoint_test1",
+            EntitiesKeys: "672e7f00-1a35-11e9-89db-0242c0a80103",
+            EntityType: "Endpoint",
+            LastUpdateDate: "2019-05-20T07:25:02.907Z",
+            PrimaryLabel: "Item",
+            SubType: "SCRIPT",
+            SureName: "CH_COMPONENT_WINDOW:Endpoint_test",
+            TenantSureName: "T0",
+            Type: "CUSTOM_HOOK",
+            UUID: "62188109-7ad0-11e9-a504-0242c0a80102",
+            Version: "18.10",
+            entityType: "Equipment"}, 
+            {                
+            Category: "ATTRIBUTE",
+            CreatedBy: "GUI_User",
+            CreationDate: "2019-05-20T07:25:02.907Z",
+            DisplayAs: "Popup",
+            DisplayName: "CH_COMPONENT_WINDOW:Endpoint_test2",
+            EntitiesKeys: "672e7f00-1a35-11e9-89db-0242c0a80103",
+            EntityType: "Endpoint",
+            LastUpdateDate: "2019-05-20T07:25:02.907Z",
+            PrimaryLabel: "Item",
+            SubType: "SCRIPT",
+            SureName: "CH_COMPONENT_WINDOW:Endpoint_test",
+            TenantSureName: "T0",
+            Type: "CUSTOM_HOOK",
+            UUID: "62188109-7ad0-11e9-a504-0242c0a80102",
+            Version: "18.10",
+            entityType: "Equipment"}];
+           
+            var dataSource = {
+                method: "POST",
+                payloadEP: {
+	           "request": {
+                        "origin": {
+                            "@class": "Endpoint",
+                            "UUID": "672e7f00-1a35-11e9-89db-0242c0a80103"
+                        },
+                        "graphSearch": false,
+                        "inclusion": {
+                            "gInclude": [
+                                "Path",
+                                "Endpoint",
+                                "FCP",
+                                "Equipment",
+                                "Location"
+                            ]
+                        },
+                        "exclusion": {
+                            "excludeFrom": [{
+                                    "from": "Location",
+                                    "exclusion": ["Location"]
+                                }
+                            ],
+                            "relation" : [{
+                                    "relType" : "ASSOCIATES_WITH",
+                                    "direction" : "OUTGOING"
+                                }
+                            ]
+                        },
+                        "multiOriginRequest": false,
+                        "gDirection": "OUTGOING"
+                    },
+                    "response": {
+                        "responseType": "List",
+                        "entity": [
+                            "Location",
+                            "Endpoint"
+                        ],"responseFilter": [{
+                                            "for": "Endpoint",
+                                            "filter": ["UUID;EQUALS;672e7f00-1a35-11e9-89db-0242c0a80103"]
+                                        }
+                                        ]
+                    },	"expand": [
+                            "Location.State",
+                            "Equipment.State",
+                        "Endpoint.State",
+                        "FCP.State",
+                        ]
+                },
+				
+				//{request: {origin: {@class: "Path", UUID: "fb893929-b3ec-11eb-84c1-0242ac14010b"},…},…}
+
+                //InternalL2SvcPath-NKGPO1C000OL901/IHUB:131
+                //daecccf9-31f2-11ea-a414-0242c0a86403
+                payload: {"request":{"origin":{"@class":"Path","UUID":"fb893929-b3ec-11eb-84c1-0242ac14010b"},"inclusion":{"gInclude":["Service","Path","Endpoint","FCP","Equipment"]},"gDirection":"OUTGOING"},"response":{"responseType":"SubTree"},"expand":["State","Equipment.Location"]},
+                
+                url: "https://10.76.198.149:28443/oss/sure/topology?limit=999999&traverse=BFS",
+                
+                headers: {
+                    "Accept": "application/json",
+                    "tenantId": "T0",
+                    "ugId": "Admin_UserGroup",
+                    "appId": "SURE_APP",
+                    "Authorization": "Basic YWRtaW46YWRtaW5AMTIz",
+                    //"Authorization": "Basic bmVvNGo6YWRtaW5AMTIz",
+                    "Content-Type": "application/json",
+                }
+            }
+
+            var data = [
+                    {
+                        "id": "UUID-E1",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint1",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E2",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint2",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E3",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint3",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E4",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint4",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E5",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint5",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E6",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint6",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E7",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint7",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E8",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint8",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E9",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint9",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E10",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint10",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E11",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint11",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E12",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint12",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E13",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint13",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E14",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint14",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E15",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint15",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E16",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint16",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E17",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint17",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E18",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint18",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E19",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint19",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-E20",
+                        "latitude": "35.149534",
+                        "state": {
+                            "OperationalState": ["UP"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "type": "ENDPOINT",
+                        "name": "Endpoint20",
+                        "longitude": "-90.04898"
+                    },
+                    {
+                        "id": "UUID-EQ1",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "EQUIPMENT",
+                        "location": "UUID-LQ1",
+                        "name": "Equipment1", 
+                    },
+                    {
+                        "id": "UUID-LQ1",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "type": "LOCATION",
+                        "name": "San Francisco",                        
+                        "latitude": "37.757815",//SF
+                        "longitude": "-122.5076405"
+                    },
+                    {
+                        "id": "UUID-EQ2",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "EQUIPMENT",
+                        "location": "UUID-LQ2",
+                        "name": "Equipment2"
+                    },
+                    {
+                        "id": "UUID-LQ2",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "LOCATION",
+                        "name": "Washington, D.C.",                       
+                        "latitude": "42.7287712",
+                        "longitude": "-78.0136286"//WDC
+                    },
+                    {
+                        "id": "UUID-EQ3",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "EQUIPMENT",                        
+                        "location": "UUID-LQ3",
+                        "name": "Equipment3"
+                    },
+                    {
+                        "id": "UUID-LQ3",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "LOCATION",
+                        "name": "Las Vegas",                         
+                        "latitude": "36.1252285",
+                        "longitude": "-115.4551953"//LV
+                    },
+                    {
+                        "id": "UUID-EQ4",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "type": "EQUIPMENT",
+                        "name": "Equipment4",                        
+                        "location": "UUID-LQ4",
+                    },
+                    {
+                        "id": "UUID-LQ4",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "type": "LOCATION",
+                        "name": "Tennessee",                        
+                        "latitude": "36.1868683",
+                        "longitude": "-87.0654407"//Tennessee
+                    },
+                    {
+                        "id": "UUID-EQ5",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "EQUIPMENT",
+                        "name": "Equipment5",                        
+                        "location": "UUID-LQ5",
+                    },
+                    {
+                        "id": "UUID-LQ5",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "LOCATION",
+                        "name": "Location5",                        
+                        "latitude": "32.8209296",
+                        "longitude": "-97.0117395"//Dallas
+                    },
+                    {
+                        "id": "UUID-EQ6",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "EQUIPMENT",
+                        "name": "Equipment6",
+                        "location": "UUID-LQ6",
+                    },
+                    {
+                        "id": "UUID-LQ6",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "type": "LOCATION",
+                        "name": "Location6",                       
+                        "latitude": "30.0332195",
+                        "longitude": "-90.0226508"//New orlands
+                    },
+                    {
+                        "id": "UUID-P1",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "name": "Path1",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ1", "UUID-EQ2"],
+                        "cNodes": ["UUID-P2", "UUID-P3", "UUID-P4", "UUID-P5", "UUID-P6"],
+                        "ePoints": ["UUID-E1", "UUID-E2"],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P2",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "name": "Path2",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ1", "UUID-EQ3"],
+                        "ePoints": ["UUID-E3", "UUID-E4"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P3",
+                        "state": {
+                            "OperationalState": ["UP"],
+                        },
+                        "name": "Path3",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ3", "UUID-EQ4"],
+                        "ePoints": ["UUID-E5", "UUID-E6"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P4",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "name": "Path4",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ4", "UUID-EQ2"],
+                        "ePoints": ["UUID-E6", "UUID-E7"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P5",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["CRITICAL"]
+                        },
+                        "name": "Path5",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ3", "UUID-EQ4"],
+                        "ePoints": ["UUID-E7", "UUID-E8"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P6",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "name": "Path6",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ3", "UUID-EQ4"],
+                       // "cNodes": [],
+                        "cNodes": ["unknown", "UUID-P12", "UUID-P8", "UUID-P9"],
+                        "ePoints": ["UUID-E9", "UUID-E10"],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P7",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "name": "Path7",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ3", "UUID-EQ5"],
+                        "ePoints": ["UUID-E11", "UUID-E12"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P8",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "name": "Path8",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ5", "UUID-EQ4"],
+                        "ePoints": ["UUID-E13", "UUID-E14"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P9",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "name": "Path9",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ5", "UUID-EQ4"],
+                        "cNodes": ["UUID-P10", "UUID-P11"],
+                        "ePoints": ["UUID-E15", "UUID-E16"],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P10",
+                        "state": {
+                            "OperationalState": ["UP"]
+                        },
+                        "name": "Path10",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ5", "UUID-EQ6"],
+                        "ePoints": ["UUID-E17", "UUID-E18"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P11",
+                        "state": {
+                            "OperationalState": ["DOWN"],
+                            "AORAlarmState": ["MAJOR"]
+                        },
+                        "name": "Path11",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ6", "UUID-EQ4"],
+                        "ePoints": ["UUID-E19", "UUID-E20"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    },
+                    {
+                        "id": "UUID-P12",
+                        "state": {
+                            "OperationalState": ["DOWN"]
+                        },
+                        "name": "Path12",
+                        "type": "PATH",
+                        "detail": {},
+                        "terminations": ["UUID-EQ5", "UUID-EQ5"],
+                        "ePoints": ["UUID-E19", "UUID-E20"],
+                        "cNodes": [],
+                        "latitude": "39.7392",
+                        "longitude": "-104.9903"
+                    }
+                ]
+
+            var locationData = [
+                {
+                    "id": "UUID-LQ1",
+                    "state": {
+                        "OperationalState": ["UP"],
+                        "AORAlarmState":["CRITICAL"]
+                    },
+                    "cNodes":["UUID-E1"],
+                    "type": "LOCATION",
+                    "name": "San Francisco",                        
+                    "latitude": "37.757815",//SF
+                    "longitude": "-122.5076405"
+                },
+             	{
+                    "id": "UUID-LQ2",
+                    "state": {
+                        "OperationalState": ["UP"],
+                        "AORAlarmState":["CRITICAL"]
+                    },
+                    "cNodes":["UUID-E2"],
+                    "type": "LOCATION",
+                    "name": "Location CMDBD28",                        
+                    "latitude": "23.58997",//SF
+                    "longitude": "90.97672"
+                },
+                {
+                    "id": "UUID-LQ3",
+                    "state": {
+                        "OperationalState": ["UP"],
+                        "AORAlarmState":["MINOR"]
+                    },
+                    "cNodes":["UUID-E3"],
+                    "type": "LOCATION",
+                    "name": "Location CMHMN18",                        
+                    "latitude": "23.7298",//SF
+                    "longitude": "90.8292"
+                }
+            ]
+            
+            var props = {
+                progressBarVisibility:true,
+                customHookData: customHookData,
+                inputMultiEquipments: inputMultiEquipments,
+                //customGUI_combinations: "Label__Type",
+                //customGUI_iconPath:"/opt/CustomIcons/",
+                rootPathID: "UUID-P1",
+                dataSource: dataSource,
+                pathClick: function(items){
+                    
+                },
+                markerClick: function(items){
+                    console.log(items);
+                },
+                entityClick: function(items){
+                    //item.id is UUID of a selected entity
+                    console.log(items)
+                },
+                onError: function(items){
+                    console.log(items);
+                    console.log(items.message)
+                },
+                typeId: 0, //0-Point2Point, 1-GeoMap, 2-individual/Multiple Entity
+                tileServer: "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png",
+                //data: data,
+                //data : locationData,
+                stateToDisplay: {},
+                statusPanel: {
+                    displayLabel: true,
+                    size: "M",
+                    style: {
+                        width: "240px",
+                        zIndex: 401,
+                    },
+                    groupToShow: "Badge Status Indication",
+                    status: [
+                        {
+                            group: "marker",
+                            text: "Badge Status Indication",
+                            value: "None",
+                            items: [
+                                {
+                                    text: "None",
+                                    label: "None",
+                                    values: []
+                                },
+                                {
+                                    text: "AORAlarmState",
+                                    label: "Alarms",
+                                    values: [{
+                                        text: "Critical",
+                                        badge: "C",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#be0006", "C")),
+                                        color: "#be0006",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Major",
+                                        badge: "M",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#ff7900", "M")),
+                                        color: "#ff7900",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Minor",
+                                        badge: "m",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#ffcc00", "m")),
+                                        color: "#ffcc00",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Warning",
+                                        badge: "w",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#42a5f5", "w")),
+                                        color: "#42a5f5",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Cleared",
+                                        badge: "cl",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#06bfa9", "cl")),
+                                        color: "#06bfa9",
+                                        enabled: true
+                                    }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            group: "marker",
+                            text: "Marker Status Indication",
+                            value: "None",
+                            items: [
+                                {
+                                    text: "None",
+                                    label: "None",
+                                    values: [],
+                                    type: "radioButton"
+                                },
+                                {
+                                    text: "OperationalState",
+                                    label: "Operational State",
+                                    values: [{
+                                        text: "Down",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#be0006", "")),
+                                        color: "#be0006",
+                                        enabled: true
+                                    }, {
+                                        text: "Up",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#8cc640", "")),
+                                        color: "#8cc640",
+                                        enabled: true
+                                    }
+                                    ]
+                                },
+                                {
+                                    text: "AdministrativeState",
+                                    label: "Administrative State",
+                                    values: [{color: "#FF7900",
+enabled: true,
+icon: "data:image/svg+xml;charset=utf-8,%3Csvg%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22mapviewsettingssvg%22%20viewBox%3D%220%200%206%206%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23FF7900%22%2F%3E%3Ctext%20x%3D%223%22%20y%3D%223%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A20%25%22%20%20fill%3D%22%23f9fbfd%22%20dy%3D%22.3em%22%3E%3C%2Ftext%3E%3C%2Fsvg%3E",
+text: "RETIRED"},{
+    color: "#F44336",
+enabled: true,
+icon: "data:image/svg+xml;charset=utf-8,%3Csvg%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22mapviewsettingssvg%22%20viewBox%3D%220%200%206%206%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23F44336%22%2F%3E%3Ctext%20x%3D%223%22%20y%3D%223%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A20%25%22%20%20fill%3D%22%23f9fbfd%22%20dy%3D%22.3em%22%3E%3C%2Ftext%3E%3C%2Fsvg%3E",
+text: "TERMINATED"
+},{
+
+    color: "#9E9E9E",
+enabled: true,
+icon: "data:image/svg+xml;charset=utf-8,%3Csvg%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22mapviewsettingssvg%22%20viewBox%3D%220%200%206%206%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%239E9E9E%22%2F%3E%3Ctext%20x%3D%223%22%20y%3D%223%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A20%25%22%20%20fill%3D%22%23f9fbfd%22%20dy%3D%22.3em%22%3E%3C%2Ftext%3E%3C%2Fsvg%3E",
+text: "RESERVED"
+},{
+    color: "#124191",
+enabled: true,
+icon: "data:image/svg+xml;charset=utf-8,%3Csvg%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22mapviewsettingssvg%22%20viewBox%3D%220%200%206%206%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%23124191%22%2F%3E%3Ctext%20x%3D%223%22%20y%3D%223%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A20%25%22%20%20fill%3D%22%23f9fbfd%22%20dy%3D%22.3em%22%3E%3C%2Ftext%3E%3C%2Fsvg%3E",
+text: "PLANNED"
+
+}, {
+    color: "#8CC63F",
+enabled: true,
+icon: "data:image/svg+xml;charset=utf-8,%3Csvg%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22mapviewsettingssvg%22%20viewBox%3D%220%200%206%206%22%20width%3D%226%22%20height%3D%226%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%223%22%20fill%3D%22%238CC63F%22%2F%3E%3Ctext%20x%3D%223%22%20y%3D%223%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20style%3D%22font-weight%3A%20bold%3B%20font-size%3A20%25%22%20%20fill%3D%22%23f9fbfd%22%20dy%3D%22.3em%22%3E%3C%2Ftext%3E%3C%2Fsvg%3E",
+text: "INSTALLED"
+
+}]
+                                },
+                            ]
+                        },
+                        {
+                            group: "path",
+                            text: "Path Status Indication",
+                            value: "None",
+                            items: [
+                                {
+                                    text: "None",
+                                    label: "None",
+                                    values: []
+                                },
+                                {
+                                    text: "AORAlarmState",
+                                    label: "Alarms",
+                                    values: [{
+                                        text: "Critical",
+                                        badge: "C",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#be0006", "C")),
+                                        color: "#be0006",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Major",
+                                        badge: "M",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#ff7900", "M")),
+                                        color: "#ff7900",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Minor",
+                                        badge: "m",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#ffcc00", "m")),
+                                        color: "#ffcc00",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Warning",
+                                        badge: "w",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#42a5f5", "w")),
+                                        color: "#42a5f5",
+                                        enabled: true
+                                    },
+                                    {
+                                        text: "Cleared",
+                                        badge: "cl",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#06bfa9", "cl")),
+                                        color: "#06bfa9",
+                                        enabled: true
+                                    }]
+                                },
+                                {
+                                    text: "OperationalState",
+                                    label: "Operational State",
+                                    values: [{
+                                        text: "Down",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#be0006", "")),
+                                        color: "#be0006",
+                                        enabled: true
+                                    }, {
+                                        text: "Up",
+                                        icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG("#8cc640", "")),
+                                        color: "#8cc640",
+                                        enabled: true
+                                    }
+                                    ]
+                                },
+                            ]
+                        }]
+                }
+
+            }
+
+
+
+            var topologymapComponent = React.createElement(topologyMap, props);
+
+            ReactDOM.render(topologymapComponent, document.getElementById("topologyMap"));
+
+            function drawSVG(color, badge) {
+                var svg = '<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mapviewsettingssvg" viewBox="0 0 6 6" width="6" height="6">\
+                         <circle cx="3" cy="3" r="3" fill="'+ color + '"/><text x="3" y="3" text-anchor="middle" font-family="Arial" style="font-weight: bold; font-size:20%"  fill="#f9fbfd" dy=".3em">' + badge + '</text>\
+                        </svg>';
+                return svg
+            }
+        }
+    </script>
+</body>
+
+</html>

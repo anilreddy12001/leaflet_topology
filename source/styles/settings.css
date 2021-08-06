@@ -1,0 +1,182 @@
+#settings{
+    height: 100%;
+}
+
+#settings input.middle:focus {
+    outline-width: 0;
+}
+
+#settings input:focus,#settings button:focus{
+    outline: none;
+}
+
+#settings .chrome-picker .flexbox-fix:nth-of-type(2) {
+    display: none !important;
+  }
+
+#settings #cards{
+    border-radius : 2px;
+    width:600px;
+    background-color: #FFFFFF;  
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+}
+
+#settings .csfWidgets.toggle .label{
+    display: none;
+}
+
+#settings #card #themeSwitchContainer,
+#settings #card #colorPickerContainer,
+#settings #card #fileUploaderContainer{
+    padding: 20px;
+    border-bottom: 1px solid #cac7c7;
+}
+
+#settings #card #themeSwitchContainer #themeSwitchWrapper{
+    display: flex;
+}
+
+#settings #card #themeSwitchContainer #themeSwitchLabel,
+#settings #card #colorPickerContainer #colorPickerLabel,
+#settings #card #fileUploaderContainer #fileUploaderLabel,
+#settings #card #colorPickerContainer #colorPickerRGBLabel,
+#settings #card #colorPickerContainer #colorPickerHEXLabel
+{
+    font-family: "Nokia Pure Text Bold", Arial, sans-serif;
+
+}
+
+#settings #card #themeSwitchContainer #themeSwitchHelperText,
+#settings #card #colorPickerContainer #colorPickerHelperText,
+#settings #card #fileUploaderContainer #fileUploaderHelperText{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: rgb(117, 117, 117);
+}
+
+#settings #card #fileUploaderContainer .listItemWrapper{
+    height: 40px;
+    border: 1px solid #e0e0e0;
+}
+
+#settings #card #fileUploaderContainer #fileUploaderInnerContainer{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#settings #card #fileUploaderContainer #fileUploaderWrapper{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    position:relative;
+    border: 1px dashed #d4d2d2;
+}
+
+#settings #card #fileUploaderContainer #fileUploaderHelperText1{
+    padding-bottom: 5px;
+    bottom: 0px;
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    left:0px;
+    width:100%;
+    color: rgb(117, 117, 117);
+}
+
+#settings #card #colorPickerContainer #colorPickerInnerContainer
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#settings #card #colorPickerContainer #btnColorPicker
+{
+    height: 55px;
+    width: 130px;
+    border: 1px solid #d4d2d2;
+    padding: 0px;
+    background-color: #124191
+}
+
+#settings .colorPickerPopOver{
+    position: absolute;
+    z-index: 2;
+}
+
+/* #settings #card #colorPickerContainer .colorPickerPopOver .right{
+    margin-right: 
+} */
+
+#settings .colorPickerCover{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#settings #card #colorPickerContainer #colorPickerRGB,
+#settings #card #colorPickerContainer #colorPickerHEX
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#settings #card #colorPickerContainer #colorPickerRGB .tbRGB,
+#settings #card #colorPickerContainer #colorPickerHEX .tbHEX
+{
+    margin: 0px 6px 0px 0px;    
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #d4d2d2;
+}
+#settings #card #colorPickerContainer #colorPickerRGB .tbRGB{
+    width: 30px;
+    color: #6b6b6b;
+}
+
+#settings #card #colorPickerContainer #colorPickerHEX .tbHEX{
+    width: 60px;
+    color: #6b6b6b;
+    font-family: "Nokia Regular", Arial, sans-serif;
+}
+
+#settings #card #colorPickerContainer #colorPickerRGBLabel,
+#settings #card #colorPickerContainer #colorPickerHEXLabel{
+    margin: 8px 15px 5px 15px;
+}
+
+#settings .settingsTabs{
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;    
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.12), 0 0 1px 0 rgba(0,0,0,0.24);
+}
+
+#settings .tab-labels{
+    border-bottom: 1px solid #cac7c7;
+}
+
+#settings .settingsTab{
+    background-color:red;
+}
+#settings #emailSetting
+{
+    padding :20px 20px ;
+   
+}
+#settings #emailSetting .emailText
+{
+    padding:10px 0px ;
+}

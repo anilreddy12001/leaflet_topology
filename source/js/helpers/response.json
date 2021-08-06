@@ -1,0 +1,819 @@
+{  "2b1257ae-b3ef-11eb-84c1-0242ac14010b": {
+    "type": "Equipment",
+    "name": "fb1pwbxlf02",
+    "id": "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+    "terminations": [
+
+    ],
+    "location": "null",
+    "ePoints": [
+
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "DOWN"
+      ],
+      "AORAlarmState": [
+        "MAJOR"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "Type": "NE",
+      "DiscoveredName": "network:172.17.132.1",
+      "SureName": "network:172.17.132.1",
+      "contextId": "1042:1",
+      "SubType": "210 WBX-32Q",
+      "DisplayName": "fb1pwbxlf02",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:56.611Z",
+      "LastUpdateDate": "2021-05-13T13:28:56.611Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Equipment",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "SystemAddress": "172.17.132.1",
+      "SiteId": "172.17.132.1",
+      "SiteName": "fb1pwbxlf02",
+      "DescriptorVersion": "5.0.0",
+      "ProductType": "68",
+      "DeviceRole": "WBX 210 Leaf",
+      "VersionType": "12",
+      "ChassisMode": "modeA",
+      "MgmtIpAddrType": "ipv4",
+      "BaseMacAddress": "D0-99-D5-A8-1A-41",
+      "Version": "TiMOS-DC-B-5.3.2-90.274",
+      "IpAddress": "172.17.132.1",
+      "ChassisType": "dc_wbx_32Q_1Slot",
+      "SysObjectId": ".1.3.6.1.4.1.6527.1.18.4",
+      "Location": "N/A"
+    }
+  },
+  "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2": {
+    "type": "Equipment",
+    "name": "fb1pvsglf04",
+    "id": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+    "terminations": [
+
+    ],
+    "location": "null",
+    "ePoints": [
+
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AORAlarmState": [
+        "CRITICAL"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+      "Type": "NE",
+      "DiscoveredName": "network:172.17.132.21",
+      "SureName": "network:172.17.132.21",
+      "contextId": "1042:1",
+      "SubType": "7850",
+      "DisplayName": "fb1pvsglf04",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:56.923Z",
+      "LastUpdateDate": "2021-05-13T13:28:56.923Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Equipment",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "SystemAddress": "172.17.132.21",
+      "SiteId": "172.17.132.21",
+      "SiteName": "fb1pvsglf04",
+      "DescriptorVersion": "5.0.0",
+      "ProductType": "38",
+      "DeviceRole": "VSG 7850",
+      "VersionType": "12",
+      "ChassisMode": "modeA",
+      "MgmtIpAddrType": "ipv4",
+      "BaseMacAddress": "68-54-ED-07-68-00",
+      "Version": "TiMOS-DC-B-5.3.2-90.274",
+      "IpAddress": "172.17.132.21",
+      "ChassisType": "dc_tor_1Slot",
+      "SysObjectId": ".1.3.6.1.4.1.6527.1.18.1",
+      "Location": "N/A"
+    }
+  },
+  "002b41f348-b3ef-11eb-84c1-0242ac14010b00": {
+    "type": "Equipment",
+    "name": "fb1pvsglf06",
+    "id": "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+    "terminations": [
+
+    ],
+    "location": "null",
+    "ePoints": [
+
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "DOWN"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "Type": "NE",
+      "DiscoveredName": "network:172.17.132.21",
+      "SureName": "network:172.17.132.21",
+      "contextId": "1042:1",
+      "SubType": "7850",
+      "DisplayName": "fb1pvsglf06",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:56.923Z",
+      "LastUpdateDate": "2021-05-13T13:28:56.923Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Equipment",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "SystemAddress": "172.17.132.21",
+      "SiteId": "172.17.132.21",
+      "SiteName": "fb1pvsglf06",
+      "DescriptorVersion": "5.0.0",
+      "ProductType": "38",
+      "DeviceRole": "VSG 7850",
+      "VersionType": "12",
+      "ChassisMode": "modeA",
+      "MgmtIpAddrType": "ipv4",
+      "BaseMacAddress": "68-54-ED-07-68-00",
+      "Version": "TiMOS-DC-B-5.3.2-90.274",
+      "IpAddress": "172.17.132.21",
+      "ChassisType": "dc_tor_1Slot",
+      "SysObjectId": ".1.3.6.1.4.1.6527.1.18.1",
+      "Location": "N/A"
+    }
+  },
+  "002b7f98cc-b3ef-11eb-84c1-0242ac14010b00": {
+    "type": "Path",
+    "name": "00from-172.17.132.1-id-1739200",
+    "id": "002b7f98cc-b3ef-11eb-84c1-0242ac14010b00",
+    "terminations": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "location": "null",
+    "ePoints": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+      "222b7f98cc-b3ef-11eb-84c1-0242ac14010b22",
+      "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc"
+    ],
+    "detail": {
+      "UUID": "002b7f98cc-b3ef-11eb-84c1-0242ac14010b00",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf06",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf04",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc": {
+    "type": "Path",
+    "name": "ccfrom-172.17.132.1-id-17392cc",
+    "id": "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc",
+    "terminations": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "ePoints": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "location": "null",
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf06",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf06",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "cc3b7f98cc-b3ef-11eb-84c1-0242ac140103cc": {
+    "type": "Path",
+    "name": "ccfrom-172.17.132.1-id-17392cc",
+    "id": "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc",
+    "terminations": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "ePoints": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "location": "null",
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf06",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf06",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "222b7f98cc-b3ef-11eb-84c1-0242ac14010b22": {
+    "type": "Path",
+    "name": "22from-172.17.132.1-id-1739222",
+    "id": "222b7f98cc-b3ef-11eb-84c1-0242ac14010b22",
+    "terminations": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "location": "null",
+    "ePoints": [
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "222b7f98cc-b3ef-11eb-84c1-0242ac14010b22",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf06",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf04",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "333b7f98cc-b3ef-11eb-84c1-0242ac14010b33": {
+    "type": "Path",
+    "name": "33from-172.17.132.1-id-1739233",
+    "id": "333b7f98cc-b3ef-11eb-84c1-0242ac14010b33",
+    "terminations": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "location": "null",
+    "ePoints": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+
+    ],
+    "detail": {
+      "UUID": "333b7f98cc-b3ef-11eb-84c1-0242ac14010b33",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf02",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf06",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "2b7f98cc-b3ef-11eb-84c1-0242ac14010b": {
+    "type": "Path",
+    "name": "from-172.17.132.1-id-17392",
+    "id": "2b7f98cc-b3ef-11eb-84c1-0242ac14010b",
+    "terminations": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "002b41f348-b3ef-11eb-84c1-0242ac14010b00"
+    ],
+    "location": "null",
+    "ePoints": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "DeploymentState": [
+        "deployed"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "DOWN"
+      ],
+      "AdministrativeState": [
+        "TERMINATED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+      "333b7f98cc-b3ef-11eb-84c1-0242ac14010b33",
+      "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc"
+    ],
+    "detail": {
+      "UUID": "2b7f98cc-b3ef-11eb-84c1-0242ac14010b",
+      "Type": "ServiceTunnelPath",
+      "DiscoveredName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "SureName": "serviceTunnel:from-172.17.132.1-id-17392",
+      "contextId": "1042:1",
+      "SubType": "VXLAN",
+      "DisplayName": "from-172.17.132.1-id-17392",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:28:57.327Z",
+      "LastUpdateDate": "2021-05-13T13:28:57.327Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "underlyingTransport": "vxlan",
+      "pathId": "17392",
+      "fromNodeId": "172.17.132.1",
+      "numberOfFunctionalUnderlyingPaths": "0",
+      "fromNodeName": "fb1pwbxlf02",
+      "egressSnmpPortId": "503316480",
+      "toNodeId": "172.17.132.21",
+      "svcConnectionType": "p2p",
+      "actualPathMtu": "9166",
+      "pathMtu": "9166",
+      "redundantVcId": "0",
+      "isAutoselectable": "true",
+      "availableBandwidth": "0",
+      "vlanVcEtherType": "33024",
+      "autoSdp": "auto",
+      "pbbEtype": "35047",
+      "creationOrigin": "evpnPmsi",
+      "redundantServiceId": "0",
+      "redundantPathId": "0",
+      "svcTunnelType": "sdp",
+      "toNodeName": "fb1pvsglf06",
+      "loadFactor": "33.0",
+      "encapsulationType": "martini",
+      "transmittedHelloMessages": "0",
+      "sdpActiveLspType": "notApplicable",
+      "receivedHelloMessages": "0",
+      "numberOfUnderlyingTransportPaths": "0",
+      "operBandwidth": "0",
+      "signallingType": "none",
+      "terminatingSiteId": "172.17.132.21"
+    }
+  },
+  "fb893929-b3ec-11eb-84c1-0242ac14010b": {
+    "type": "Path",
+    "name": "SDP Binding 172.17.132.1 (17392) - circuit-17392-2502986",
+    "id": "fb893929-b3ec-11eb-84c1-0242ac14010b",
+    "terminations": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "location": "null",
+    "ePoints": [
+      "2b1257ae-b3ef-11eb-84c1-0242ac14010b",
+      "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2"
+    ],
+    "state": {
+      "CreatedByAppId": [
+        "SURE_APP"
+      ],
+      "CreatedByUgId": [
+        "T0_Admin_UserGroup"
+      ],
+      "CreatedByUserId": [
+        "SureRDAUser"
+      ],
+      "OperationalState": [
+        "UP"
+      ],
+      "AdministrativeState": [
+        "INSTALLED"
+      ],
+      "CreatedByTenantId": [
+        "T0"
+      ]
+    },
+    "cNodes": [
+      "2b7f98cc-b3ef-11eb-84c1-0242ac14010b",
+      "002b7f98cc-b3ef-11eb-84c1-0242ac14010b00",
+      "cc2b7f98cc-b3ef-11eb-84c1-0242ac14010bcc"
+    ],
+    "detail": {
+      "UUID": "fb893929-b3ec-11eb-84c1-0242ac14010b",
+      "Type": "SpokeSDPBindingPath",
+      "DiscoveredName": "svc-mgr:service-1042:172.17.132.1:circuit-17392-2502986",
+      "SureName": "svc-mgr:service-1042:172.17.132.1:circuit-17392-2502986",
+      "contextId": "1042:1",
+      "SubType": "VPLS",
+      "DisplayName": "SDP Binding 172.17.132.1 (17392) - circuit-17392-2502986",
+      "Category": "INFRASTRUCTURE",
+      "CreationDate": "2021-05-13T13:13:17.866Z",
+      "LastUpdateDate": "2021-05-13T13:13:17.866Z",
+      "ResourceCategory": "OWNED_RESOURCE",
+      "Label": "Path",
+      "TenantSureName": "T0",
+      "CreatedBy": "MAYA-NFMP",
+      "rootNetworkElement": "False",
+      "serviceType": "vpls",
+      "etreeLeafAccess": "false",
+      "svcComponentId": "1042",
+      "pathId": "17392",
+      "operationalEgressLabel": "0",
+      "fromNodeId": "172.17.132.1",
+      "circuitType": "spoke",
+      "creationOrigin": "evpnPmsi",
+      "vlanVcTag": "4095",
+      "circuitTransport": "unknown",
+      "vcType": "ethernet",
+      "toNodeName": "fb1pvsglf04",
+      "autoSelectReturnTunnel": "false",
+      "fromNodeName": "fb1pwbxlf02",
+      "encapsulationType": "martini",
+      "toNodeId": "172.17.132.21",
+      "operationalIngressLabel": "0",
+      "serviceId": "931662924",
+      "sdpMtu": "9216",
+      "autoSelectTunnel": "false",
+      "signallingType": "none",
+      "vcId": "2502986"
+    }
+  }
+}

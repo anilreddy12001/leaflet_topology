@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Component</title>
+
+    <body>
+        <div id="StatusPanel"></div>
+        <script type="text/javascript">        
+            window.onload = function name(params) {
+                
+                
+                var statusPanel = SUREUI.components.StatusPanel;
+
+                function settingsChanged(property) {
+                    ReactDOM.unmountComponentAtNode(document.getElementById("StatusPanel"))
+                    var statusPanelComponent = React.createElement(statusPanel, property);
+                    ReactDOM.render(statusPanelComponent, document.getElementById("StatusPanel"));
+
+                }
+
+                var prop = {
+                    show: true,
+                    style: {
+                        width: "240px",
+                        left: "10px",
+                        top: "10px"
+                    },
+                    onChange: settingsChanged,
+                    displaylabel: true,
+                    size: "M",
+                    groupToShow: "Badge Status Indication",
+                    status: [{
+                        text: "Badge Status Indication",
+                        value: "AlarmState",
+                        items: [
+                            {
+                                text: "None",
+                                label: "None",
+                                values: []
+                            },
+                            {
+                                text: "AlarmState",
+                                label: "Alarms",
+                                values: [{
+                                    text: "Critical",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#be0006", badge: "C" })),
+                                    color: "#be0006",
+                                    enabled: true
+                                },
+                                {
+                                    text: "Major",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#ff7900", badge: "M" })),
+                                    color: "#ff7900",
+                                    enabled: true
+                                },
+                                {
+                                    text: "Minor",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#ffcc00", badge: "m" })),
+                                    color: "#ffcc00",
+                                    enabled: true
+                                },
+                                {
+                                    text: "Warning",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#42a5f5", badge: "w" })),
+                                    color: "#42a5f5",
+                                    enabled: true
+                                },
+                                    // {
+                                    //     text: "Cleared",
+                                    //     icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#06bfa9", badge: "cl" })),
+                                    //     color: "#06bfa9",
+                                    //     enabled: true
+                                    // }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: "Marker Status Indication",
+                        value: "OperationalState",
+                        items: [
+                            {
+                                text: "None",
+                                label: "None",
+                                values: [],
+                                type: "radioButton"
+                            },
+                            {
+                                text: "OperationalState",
+                                label: "Operational State",
+                                values: [{
+                                    text: "Down",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#ee4538", badge: "" })),
+                                    color: "#ee4538",
+                                    enabled: true
+                                }, {
+                                    text: "Up",
+                                    icon: "data:image/svg+xml;charset=utf-8," + encodeURIComponent(drawSVG({ value: "settings", color: "#8cc640", badge: "" })),
+                                    color: "#8cc640",
+                                    enabled: true
+                                }
+                                ]
+                            },
+                            {
+                                text: "AdministrativeState",
+                                label: "Administrative State",
+                                values: []
+                            },
+                        ]
+                    }]
+                }
+
+                var statusPanelComponent = React.createElement(statusPanel, prop);
+                ReactDOM.render(statusPanelComponent, document.getElementById("StatusPanel"));
+
+                //Helper Methods
+                function drawSVG(request, siteCount, pieValue) {
+                    var siteCount = siteCount > 9999 ? "9999+ Sites" : siteCount + " Sites";
+                    var lsize = ["small", "medium", "large", "xlarge"]
+                    if (request.state)
+                        var stateinfo = '<circle cx="16" cy="4" r="4.5" fill="' + request.state.color + '" style="stroke:white ;stroke-width:1px;"/><text x="16" y="4" text-anchor="middle" font-family="Arial" style="font-weight: bold; font-size:35%"  fill="#f9fbfd" dy=".3em">' + request.state.badge + '</text>';
+                    var svg = "";
+                    switch (request.value) {
+                        case "cluster":
+                            svg = '<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mapviewclustersvg" viewBox="-3 -3 6 6" width="6" height="6" style="transform: rotate(-90deg);">\
+                        <g>\
+                            <rect id="mapviewclusterrect" x="-2.75" y="-2.75" rx="0.25" ry="0.25" height="5.5" width="5.5"></rect>\
+                            ' + (pieValue ? getPiChartElements(pieValue) : "") + '\
+                            <text id="mapviewclustertext" x="0" y="2" font-size="1" text-anchor="middle">' + siteCount + '</text>\
+                        </g>\
+                    </svg>';
+                            break;
+                        case "marker":
+                            if (request.size) {
+                                var scale = lsize.indexOf(request.size.value) * 0.25 + 0.75;
+                                var size = "style='transform-origin:bottom; transform:scale(" + scale + "," + scale + ")'";
+                            }
+                            svg = '<svg id="mapviewmarkersvg" viewBox="-2 0 20 26" ' + (size ? size : "") + 'version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\
+                        <g id="Symbols-(Map)---Nokia" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\
+                            <g fill="'+ request.color + '">\
+                                <path stroke="'+ request.color + '" d="M7.9964124,24 C7.9964124,24 16.3051778,17.7981979 15.9913273,12.2953973 C15.7138588,7.43048918 12.411882,4 7.9964124,4 C3.5809428,4 0.0992023405,7.71561877 0.00149746311,12.2953973 C-0.126521704,18.2961154 7.9964124,24 7.9964124,24  Z" id="Oval"></path>\
+                            '+ (stateinfo ? stateinfo : "") + '</g>\
+                        </g>\
+                    </svg>'
+                            break;
+                        case "settings":
+                            svg = '<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mapviewsettingssvg" viewBox="0 0 6 6" width="6" height="6">\
+                         <circle cx="3" cy="3" r="3" fill="'+ request.color + '"/><text x="3" y="3" text-anchor="middle" font-family="Arial" style="font-weight: bold; font-size:20%"  fill="#f9fbfd" dy=".3em">' + request.badge + '</text>\
+                        </svg>';
+                            break;
+
+                    }
+
+                    function getPiChartElements(input) {
+                        //derived from unit circle def.
+                        var path = "";
+                        var totalArea = 0
+                        input.forEach(function (item) {
+                            var cordinateStart = Math.cos(2 * Math.PI * totalArea);
+                            var cordinateEnd = Math.sin(2 * Math.PI * totalArea);
+                            totalArea += item.value
+                            path += '<path d="M ' + cordinateStart + ' ' + cordinateEnd + ' A 1 1 0 ' + (item.value > .5 ? 1 : 0) + ' 1 ' + Math.cos(2 * Math.PI * totalArea) + ' ' + Math.sin(2 * Math.PI * totalArea) + ' L 0 0" fill="' + item.color + '"></path>'
+                        })
+                        return path;
+                    }
+                    return svg;
+                }
+            }
+        </script>
+
+</html>

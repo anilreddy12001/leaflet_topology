@@ -1,0 +1,268 @@
+
+#detailsDiv .container{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+#detailsDiv .propContainer{
+    padding: 6px 10px 6px 10px;
+}
+
+#detailsDiv iframe{    
+    border: none;
+    width:100%;
+}
+
+#detailsDiv #OverlayPanel{
+    background-color: #fafafa;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#detailsDiv #OverlayPanel .panel-body{
+    width: 100%;
+    padding: 0 24px 0 24px;
+    position: relative;
+}
+
+#detailsDiv .close{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-position: center center;
+    background-image: url("../images/ic_close.svg")
+}
+
+#detailsDiv .propValue{
+    font-family: Nokia Pure,Arial,sans-serif;
+    font-size: 13px;
+}
+
+#detailsDiv .panelLabel{
+    color: #9E9E9E;
+    font-family: Nokia Medium,Arial,sans-serif;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+#detailsDiv .iframeContainer{
+    padding: 24px 0 24px 0;
+} 
+
+#detailsDiv .header{
+    padding:10px;
+    border-bottom: 1px solid #c3c5d0;
+    margin-bottom: 6px;
+}
+#detailsDiv .title{
+    float: none;
+    display: inline-block;
+    margin-right: 26px;
+    line-height: 18px !important;
+    flex: 1;
+    max-width: 80%;
+    word-wrap: break-word
+}
+
+#detailsDiv .panel-header{
+    height: initial;
+}
+
+#detailsDiv {
+    margin-bottom: 100px;
+    background-color: #fafafa;
+    padding: 6px;
+}
+
+.expansionItem{
+padding-top:10px;
+margin-top: -10px;
+}
+
+#wCloseBtnEV .ccfk-dialog {
+    z-index: 10000;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px) !important;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    background-color: #fff;
+    box-shadow: 0 0 24px 0 rgba(0,0,0,.22), 0 24px 24px 0 rgba(0,0,0,.3);
+    border-radius: 2px;
+}
+
+
+.csfWidgets .ccfk-dialog .content-container {
+    
+/*height: calc(100%) !important;*/
+
+}
+
+.csfWidgets.list {
+    float: left;
+    background: #fafafa;
+    position: relative;
+    border-radius: 0;
+    box-shadow: 0 8px 24px 0 rgba(0,0,0,.24);
+    white-space: pre;
+    outline: none;
+    z-index: 99999;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.csf-widgets-expansion-panel .item-wrapper {
+ padding-right: 0px;   
+}
+
+
+
+.csf-widgets-expansion-panel .toggle-button.collapsed {
+    transition-duration: .3s;
+    transform: rotate(-180deg);
+    top: 6px !important;
+    right: 5px;
+}
+.csf-widgets-expansion-panel .toggle-button.expanded {
+    transition-duration: .3s;
+    transform: rotate(0deg);
+    top: 6px !important;
+    right: 5px;
+}
+
+.csfWidgets .ccfk-alert-dialog .header-container, .csfWidgets .ccfk-dialog .header-container {
+    height: 45px !important;
+    width: 100%;
+    display: block;
+}
+
+.csfWidgets .ccfk-alert-dialog .content-container, .csfWidgets .ccfk-dialog .content-container {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: calc(100% - 0px) !important;
+}
+#equipmentViewComponent{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+.csfWidgets.overlay.active.black {
+    overflow: hidden !important;
+    height: calc(100%  -88px) !important;
+    /* background-color: rgba(0,0,0,.5)!important; */
+    transition: all .45s cubic-bezier(.4,0,.2,1);
+}
+
+.titleDiv {
+padding-bottom: 8px;
+padding-left: 10px;
+}
+
+.csf-widgets-expansion-panel .item {
+    border-radius: 2px 2px 0 0;
+    padding-right: 2px;
+    padding-left: 6px;
+    margin-left: -27px;
+}
+
+.csf-widgets-expansion-panel .item-wrapper {
+    padding-right: 0px;
+    margin-left: -3px;
+    margin-right: 0px;
+}
+
+.csfWidgets.app-toolbar {
+    margin-right: 14px;
+    margin-left: 0px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fafafa;
+    width: calc(100% + 36px);
+    max-width: 100%;
+    min-width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.24);
+    min-height: 64px;
+    overflow: visible;
+    margin-bottom: 5px;
+}
+.csfWidgets .ccfk-alert-dialog .header-container h3.title, .csfWidgets .ccfk-dialog .header-container h3.title {
+    height: 35px;
+    float: left;
+    font-family: Nokia Pure Text Medium,Arial,sans-serif;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-left: 18px;
+    line-height: 24px;
+    overflow: hidden;
+}
+.csfWidgets .ccfk-alert-dialog .header-container .header-title-button, .csfWidgets .ccfk-dialog .header-container .header-title-button {
+    display: inline-block;
+    float: right;
+    width: 52px;
+    padding: 5px 0 0;
+}
+
+.csfWidgets.app-toolbar .app-toolbar__title {
+    min-height: 64px;
+    height: 64px;
+    max-height: 64px;
+    overflow: hidden;
+    flex: 1 1 175px;
+    min-width: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+
+#evclosebuttondiv{
+z-index:999;
+    position: absolute;
+    right: 3px;
+    width: 25px;
+    height: 25px;
+    cursor:pointer;
+    background-position: center center;
+    background-image: url("../images/ic_close.svg")
+}
+
+#equipmentViewComponent div div #wTitleOverlayPanelEV-stateless .app-toolbar__last-half-container{
+    margin-top: 27px;
+    margin-right: -10px;
+}
+
+#loadingDiv{
+background-color: #cecece;
+}
+
+
+#progressIndicatorCircularID{
+    position: absolute;
+    bottom:350px;
+    left: 50%;
+    z-index: 9;
+}
+
+
+#equipmentViewComponent div div div div div div div div div div div .ag-pinned-right-header{
+visibility: hidden;
+}

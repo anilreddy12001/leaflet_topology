@@ -1,0 +1,170 @@
+/* Settings panel */
+
+
+.statusPanel{
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;  
+  font-size: 13px;
+  background: white;
+  min-width: 248px; 
+  display: none;
+  position: absolute;
+}
+
+.statusPanel .csfWidgets.toggle.slider-container{
+  float: right;
+}
+
+.statusPanel .csfWidgets .radio-container label{
+  font-weight: normal;
+  display: flex;
+  width:fit-content;
+}
+
+.statusPanel .csfWidgets .checkbox-container, .csfWidgets .radio-container{
+  min-width: 80px;
+}
+
+.statusPanel .csfWidgets.toggle button{
+  float: right;
+  margin: 2px 5px;
+}
+
+.statusPanel .csfWidgets .radio-container .own-radio{
+  box-sizing: initial;
+}
+
+.statusPanel .csfWidgets.toggle .csfWidgets.label{
+  display:none;
+}
+
+.statusPanel img text{
+  opacity: 0;
+}
+
+.statusPanel.show{
+  display: inherit;
+}
+
+
+.statusPanel .row{
+  padding : 10px 10px 0px 5px;
+  margin : 0px;
+}
+
+.statusPanel .paddingLeft{
+  padding-left: 10px;
+}
+
+.statusPanel .paddingBottom{
+  padding-bottom: 10px
+}
+.statusPanel .paddingTop{
+  padding-top: 5px;
+}
+
+.statusPanel .statusIcon{
+  position : absolute; 
+  left : 15px;
+  width:17px;
+}
+
+.statusPanel .statusName{
+  position : absolute;
+  left : 36px; 
+}
+
+.statusPanel .statusGroupHeader{
+  border-top: 1px solid lightgrey;
+  opacity: 1;
+}
+
+.statusPanel .statusGroupHeader:after {
+  font-family: 'Glyphicons Halflings';  
+  content: "\e114";
+  float: right;
+  color: lightgrey;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.statusPanel .statusGroupHeader.collapsed{  
+  cursor: pointer;  
+  padding-bottom: 10px
+}
+
+.statusPanel .statusGroupHeader.collapsed:after {
+  /* content: "\e080";  */
+   transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);   
+}
+
+.statusPanel .statusHeader{
+  display: inline;
+}
+
+.statusPanel .collapsed + .statusGroup {
+  display: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.statusPanel .statusGroup{  
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.statusPanel .csfWidgets .label{
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif !important;
+  color: rgb(0, 0, 0) !important;
+  display: block
+}
+
+.statusPanel .status{
+  display: none;
+  padding: 0px 0px 0px 10px;
+}
+
+.statusPanel .selected .status{
+  display:inherit;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+
+
+*:before, *:after {
+  -webkit-box-sizing: initial;
+     -moz-box-sizing: initial;
+          box-sizing: initial;
+}
+
+.divider{
+  border-bottom: 1px solid lightgray
+}
+
+.colPadding{
+  padding : 0px 5px 0px 5px;
+}
+
+.statusPadding{
+  padding : 6px;
+}
+
+.clustermsg-class{
+  color:#333;  
+  font-size: 12px; 
+  font-weight: bold;
+}
+

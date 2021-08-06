@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta charset="utf-8" />
+    <title>SURE UI Component</title>
+</head>
+
+<body>
+    <div id="view"></div>
+    <div id="errorDialog"></div><!-- USED FOR IFRAME-->
+    
+    <script type="text/javascript">
+
+        var React, ReactDOM, ComponentToLoad;
+
+        function loadComponent(event) {
+            if (event.data.type == "ACCESS_SURE_UI_COMPONENT" && event.data.payload) {
+                var sureComponent = SUREUI.components[event.data.payload.componentKey]
+                var ComponentToLoad = React.createElement(sureComponent, event.data.payload.properties);
+                ReactDOM.render(ComponentToLoad, document.getElementById("view"));
+            }
+            else if(event.data.type == "UNMOUNT_SURE_UI_COMPONENT"){
+                if(ComponentToLoad){
+                    ReactDOM.unmountComponentAtNode(document.getElementById("view"))
+                }
+            }
+        }
+
+        window.onload = function name(params) {
+        }
+        
+        window.addEventListener("message", loadComponent, false);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+
+/* EquipmentMap */
+
+/* Override leaflet props */
+#equipmentMap .leaflet-bar a:last-child {
+  border-radius: 0px;
+}
+
+#equipmentMap  div.leaflet-pane.leaflet-customOverlay-pane{
+  z-index: 201;
+  background-color: white;
+  opacity: 0.7;
+}
+
+#equipmentMap .leaflet-right{
+  right: 2%;
+}
+
+#equipmentMap .leaflet-bar {
+  border: none;
+  box-shadow: 0px 1px 4px #888787
+}
+
+#equipmentMap{
+    display: block;
+}
+
+/* #equipmentMapContainer #progress{
+    width:0%;
+    max-width: 100%;
+    height: 2px;
+    display:block;
+    background:linear-gradient(to top, #33ccff 0%, #3333cc 100%);
+    position: absolute;
+    z-index: 500;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    /* -webkit-transition: width 2s height 5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    transition: width 2s height 5s cubic-bezier(0.45, 0.05, 0.55, 0.95); *
+} 
+*/
+
+#equipmentMapContainer .eqProgressBar-w{
+  height: 10px;
+  border: solid 1px #fff;
+  display: block;
+  position: absolute;
+  z-index: 9999;
+  box-sizing: border-box;
+  width: 100%;
+  background: #ccc;
+}
+
+#equipmentMapContainer .eqProgressBar{
+  background: #2C3E50 !important;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7dc9d6, #6087af) !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7dc9d6, #6087af) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: block;
+  max-width: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+}
+
+#equipmentMap path{
+  stroke-width: 3px;
+}
+
+#equipmentMap path.selected{
+  stroke: #42A5F6 !important;
+  /* stroke-width: 3px; */
+  /* transform: translateX(15px); */
+}
+
+#equipmentMap rect.selected{
+  stroke: #42A5F6 !important;
+   stroke-width: 30px !important;
+  /* transform: translateX(15px); */
+}
+#equipmentMap  #mapviewclustersvg #mapviewclusterrect.selected, #equipmentMap #mapviewclustersvg:hover #mapviewclusterrect.selected{
+  stroke: #42A5F6;
+  stroke-width: 0.2px;
+  stroke-opacity: 1;
+  /* transform: translateX(15px); */
+}
+
+#equipmentMap  #mapviewmarkerlabel{
+      font-family: Nokia Regular;
+      font-weight: bold;
+      opacity: 0;
+      /* border: 1px solid red; */
+      text-align: center;
+      /* display: inline-block; */
+}
+
+#equipmentMapContainer.showText #mapviewmarkerlabel{
+  opacity: 1;
+}
+#equipmentMapContainer.size_s #mapviewmarkersvg{
+  transform: scale(0.5,0.5);
+}
+
+#equipmentMapContainer.size_s #mapviewmarkersvg text, #equipmentMapContainer.size_m #mapviewmarkersvg text{
+  fill-opacity: 0
+}
+
+#equipmentMapContainer.size_m #mapviewmarkersvg{
+  transform: scale(0.75,0.75);
+}
+#equipmentMapContainer.size_l #mapviewmarkersvg{
+  transform: scale(1,1);
+}
+#equipmentMapContainer.size_xl #mapviewmarkersvg{
+  transform: scale(1.25,1.25);
+}
+
+#equipmentMap .mapviewsettings{
+  background: url('../images/ic_settings_24px.svg');
+  background-size: 18px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+#equipmentMap .treeviewsettings{
+  background: url('../images/ic_object_in_hierarchy.svg');
+  background-size: 20px 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+#equipmentMap .mapviewfullscreen{
+  background: url('../images/map/fullscreen.svg');
+  background-size: 23px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+  /* margin-right: 0px; */
+}
+
+#equipmentMap.expanded .mapviewfullscreen{
+  background: url('../images/map/fullscreen_exit.svg');  
+  background-size: 23px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  cursor: pointer;
+}
+
+#equipmentMap  #mapviewclustersvg{
+    height: 100px;
+    width: 100px;
+}
+
+#equipmentMap  #mapviewclusterrect{
+  fill: #000000;
+    fill-opacity: 0.30;
+    stroke: #BDBDBD;
+    stroke-opacity: 0.35;
+    stroke-width: 0.05;
+}
+
+/* #equipmentMap  #mapviewclustersvg:hover #mapviewclusterrect{
+    fill: #000000;
+    fill-opacity: 0.30;
+    stroke: #BDBDBD;
+    stroke-opacity: 0.35;
+    stroke-width: 0.05;
+} */
+
+#equipmentMap  #mapviewclustertext{
+    transform: rotate(90deg);
+    fill: #000000;
+    /* font-weight: bold; */
+    font-size: 7%;
+}
+
+/* #equipmentMap  #mapviewclustersvg:hover #mapviewclustertext{
+    fill: #000000;
+} */
